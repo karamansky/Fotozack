@@ -1,0 +1,16 @@
+@import "bourbon"
+
+@mixin grey-gradient($top-grey-gradient, $bot-grey-gradient)
+	background: $top-grey-gradient
+	background: -moz-linear-gradient(top,  $top-grey-gradient 0%, $bot-grey-gradient 54%)
+	background: -webkit-linear-gradient(top,  $top-grey-gradient 0%,$bot-grey-gradient 54%)
+	background: linear-gradient(to bottom,  $top-grey-gradient 0%,$bot-grey-gradient 54%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-grey-gradient', endColorstr='$bot-grey-gradient',GradientType=0 )
+
+
+@mixin gradient($top, $bottom)
+	background: $top
+	background: -moz-linear-gradient(top,  $top 0%, $bottom 60%)
+	background: -webkit-linear-gradient(top,  $top 0%,$bottom 60%)
+	background: linear-gradient(to bottom,  $top 0%,$bottom 60%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 )

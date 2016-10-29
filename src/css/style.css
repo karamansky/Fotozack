@@ -50,8 +50,8 @@ p {
   font-family: "Roboto-Light", sans-serif; }
 
 li a {
-  font-size: 14px;
-  line-height: 30px; }
+  font-size: 12px;
+  line-height: 14px; }
 
 img {
   height: auto; }
@@ -2257,6 +2257,147 @@ li {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+.icon {
+  display: block;
+  background-size: 100%; }
+
+.icon-cart {
+  background: url("../images/icon-cart.png") center no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.icon-man {
+  background: url("../images/icon-man.png") center no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.icon-woman {
+  background: url("../images/icon-woman.png") center no-repeat;
+  width: 51px;
+  height: 50px; }
+
+.icon-unisex {
+  background: url("../images/icon-question.png") center no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.icon-lock {
+  background: url("../images/icon-lock.png") center no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.icon-unlock {
+  background: url("../images/icon-unlock.png") center no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.icon-gear {
+  background: url("../images/icon-gear.png") center no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.icon-search {
+  background: url("../images/icon-search.png") center no-repeat;
+  width: 30px;
+  height: 30px; }
+
+body {
+  background-color: #f5f5f5; }
+
+.header .header__logo {
+  margin: 25px 16px; }
+
+.header .header__cart {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 10;
+  background: #333333;
+  background: -webkit-linear-gradient(top, #333333 0%, #000000 60%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), color-stop(60%, #000000));
+  background: linear-gradient(to bottom, #333333 0%, #000000 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  padding: 20px 12px 12px 12px; }
+
+.header .cart {
+  overflow: hidden;
+  vertical-align: top; }
+  .header .cart input[type=text] {
+    width: 275px;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    border: none;
+    float: left; }
+  .header .cart button {
+    border: none;
+    background: #ffffff;
+    margin-left: -35px;
+    border-radius: 5px;
+    float: left;
+    margin-top: 1px; }
+
+.header .cart__icon {
+  display: table-cell;
+  padding-right: 18px; }
+
+.header .cart__menu {
+  display: table-cell;
+  vertical-align: top; }
+  .header .cart__menu h3 {
+    font-family: "Roboto-Regular", sans-serif;
+    color: #fff;
+    margin-bottom: 10px; }
+  .header .cart__menu ul {
+    margin-bottom: 40px; }
+  .header .cart__menu li a {
+    font-size: 12px;
+    line-height: 20px; }
+    .header .cart__menu li a:hover {
+      font-family: "Roboto-Black", sans-serif;
+      color: #fff; }
+
+.navbar-default {
+  background: #b1b3b6;
+  background: -webkit-linear-gradient(top, #b1b3b6 0%, #fbfbfb 54%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b1b3b6), color-stop(54%, #fbfbfb));
+  background: linear-gradient(to bottom, #b1b3b6 0%, #fbfbfb 54%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-grey-gradient', endColorstr='$bot-grey-gradient',GradientType=0 ); }
+
+.navbar {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  min-height: 45px; }
+
+.navbar-nav > li > a {
+  padding-top: 13px;
+  padding-bottom: 12px; }
+
+.navbar-nav {
+  padding-left: 12px; }
+  .navbar-nav a {
+    color: #727272; }
+  .navbar-nav a.active {
+    font-family: "Roboto-Bold", sans-serif; }
+
+.inform {
+  background-color: #0277B4; }
+  .inform .inform__list {
+    overflow: hidden; }
+    .inform .inform__list ul {
+      padding-left: 15px; }
+    .inform .inform__list li {
+      float: left;
+      padding: 5px 0 5px 10px; }
+      .inform .inform__list li a {
+        border-right: 1px solid #fff;
+        padding-right: 10px; }
+        .inform .inform__list li a:hover {
+          text-decoration: underline; }
+    .inform .inform__list li:last-child a {
+      border-right: none; }
 
 @media screen and (max-width: 1281px) {
   .wrapper .container-big {

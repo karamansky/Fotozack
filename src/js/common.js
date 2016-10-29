@@ -2,26 +2,52 @@
 $(function(){
 	$(document).ready(function(){
 
-		$('.slider').owlCarousel({
-			slideSpeed : 300,
-			paginationSpeed : 400,
-			singleItem:true,
-			autoPlay: true
+		// $('.slider').owlCarousel({
+		// 	slideSpeed : 300,
+		// 	paginationSpeed : 400,
+		// 	singleItem:true,
+		// 	autoPlay: true
+		// });
+
+		
+/*смена иконок корзины при ховере*/
+		$("#warenkorb").hover(
+				function(){
+					$(".cart__icon > i").removeClass().addClass("icon icon-cart");
+				},
+				function(){
+					$(".cart__icon > i").removeClass().addClass("icon icon-unisex");
 		});
+		$("#konto").hover(
+				function(){
+					$(".cart__icon > i").removeClass().addClass("icon icon-gear");
+				},
+				function(){
+					$(".cart__icon > i").removeClass().addClass("icon icon-unisex");
+		});
+		$("#abmelden").hover(
+				function(){
+					$(".cart__icon > i").removeClass().addClass("icon icon-lock");
+				},
+				function(){
+					$(".cart__icon > i").removeClass().addClass("icon icon-unisex");
+		});
+
+
 
 		//popup form
-		$('.popup').magnificPopup({
-			type: 'inline',
-			fixedBgPos: true,
-			closeOnContentClick: true,
-			mainClass: 'my-mfp-slide-bottom'
-		});
+		// $('.popup').magnificPopup({
+		// 	type: 'inline',
+		// 	fixedBgPos: true,
+		// 	closeOnContentClick: true,
+		// 	mainClass: 'my-mfp-slide-bottom'
+		// });
 
-		$(".suggest-list__item a").on("click", function(){
-			event.preventDefault();
-			var txt = $(this).html().replace(/<\/?[^>]+>/g,'');
-			$(".search-form input[type=text]").val(txt);
-		});
+		// $(".suggest-list__item a").on("click", function(){
+		// 	event.preventDefault();
+		// 	var txt = $(this).html().replace(/<\/?[^>]+>/g,'');
+		// 	$(".search-form input[type=text]").val(txt);
+		// });
 
 		// .replace(/<\/?[^>]+>/g,'')
 
@@ -29,40 +55,40 @@ $(function(){
 //AJAX email send
 
 
-		$('form').submit(function(event) {
-			event.preventDefault();
-
-			var id = $(this).attr('id');
-			var data = $(this).serialize();
-
-			$.ajax({
-				url				: 'email.php',
-				data			: data,
-				type			: 'post',
-				beforeSend: function(){
-					/*отключаем кнопку, чтобы небыло лишних нажатий*/
-					$('#'+ id +' input[type="submit"]').attr('disabled', 'disabled');
-				},
-				success		: function(){
-					/*затираем введенные данные в полях ввода, чтобы показать, что форма обработана*/
-					$('#'+ id +' input', '#'+ id + ' textarea').val('');
-					/*закрываем popup-окно*/
-					$.magnificPopup.close();
-					/*Показвем сообщение об успешном завершении*/
-					$(".success").fadeIn().delay(3000).fadeOut();
-				},
-				error			: function(){
-					/*закрываем popup-окно*/
-					$.magnificPopup.close();
-					/*Показвем сообщение об неудачном завершении*/
-					$(".error").fadeIn().delay(3000).fadeOut();
-				},
-				complete	: function(){
-					/*Включаем кнопку*/
-					$('#'+ id +' input[type="submit"]').removeAttr("disabled");
-				}
-			});
-		});
+		// $('form').submit(function(event) {
+		// 	event.preventDefault();
+		//
+		// 	var id = $(this).attr('id');
+		// 	var data = $(this).serialize();
+		//
+		// 	$.ajax({
+		// 		url				: 'email.php',
+		// 		data			: data,
+		// 		type			: 'post',
+		// 		beforeSend: function(){
+		// 			/*отключаем кнопку, чтобы небыло лишних нажатий*/
+		// 			$('#'+ id +' input[type="submit"]').attr('disabled', 'disabled');
+		// 		},
+		// 		success		: function(){
+		// 			/*затираем введенные данные в полях ввода, чтобы показать, что форма обработана*/
+		// 			$('#'+ id +' input', '#'+ id + ' textarea').val('');
+		// 			/*закрываем popup-окно*/
+		// 			$.magnificPopup.close();
+		// 			/*Показвем сообщение об успешном завершении*/
+		// 			$(".success").fadeIn().delay(3000).fadeOut();
+		// 		},
+		// 		error			: function(){
+		// 			/*закрываем popup-окно*/
+		// 			$.magnificPopup.close();
+		// 			/*Показвем сообщение об неудачном завершении*/
+		// 			$(".error").fadeIn().delay(3000).fadeOut();
+		// 		},
+		// 		complete	: function(){
+		// 			/*Включаем кнопку*/
+		// 			$('#'+ id +' input[type="submit"]').removeAttr("disabled");
+		// 		}
+		// 	});
+		// });
 
 
 

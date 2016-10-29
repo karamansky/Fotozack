@@ -2,8 +2,106 @@
 @import "vars"
 @import "base"
 @import "../libs/font-awesome/scss/font-awesome"
+@import "mixins"
+@import "icons"
 
+body
+	background-color: $body
+	
+.container
+	//outline: 1px solid black
 
+.header
+	.header__logo
+		margin: 25px 16px
+
+	.header__cart
+		position: absolute
+		right: 10px
+		top: 0
+		z-index: 10
+		+gradient($top-black-gradient, $bot-black-gradient)
+		padding: 20px 12px 12px 12px
+
+	.cart
+		overflow: hidden
+		vertical-align: top
+
+		input[type=text]
+			width: 275px
+			padding: 5px 10px
+			text-overflow: ellipsis
+			border-radius: 5px
+			border: none
+			float: left
+
+		button
+			border: none
+			background: #ffffff
+			margin-left: -35px
+			border-radius: 5px
+			float: left
+			margin-top: 1px
+
+	.cart__icon
+		display: table-cell
+		padding-right: 18px
+
+	.cart__menu
+		display: table-cell
+		vertical-align: top
+		h3
+			font-family: $r-regular
+			color: #fff
+			margin-bottom: 10px
+		ul
+			margin-bottom: 40px
+		li a
+			font-size: 12px
+			line-height: 20px
+			&:hover
+				font-family: $r-black
+				color: #fff
+
+.navbar-default
+	+grey-gradient($top-grey-gradient, $bot-grey-gradient)
+
+.navbar
+	-webkit-border-radius: 0
+	-moz-border-radius: 0
+	border-radius: 0
+	border: none
+	margin-bottom: 0
+	min-height: 45px
+
+.navbar-nav > li > a
+	padding-top: 13px
+	padding-bottom: 12px
+
+.navbar-nav
+	padding-left: 12px
+	a
+		color: $dark-grey
+	a.active
+		font-family: $r-bold
+
+.inform
+	background-color: $blue
+	.inform__list
+		overflow: hidden
+		ul
+			padding-left: 15px
+		li
+			float: left
+			padding: 5px 0 5px 10px
+			a
+				border-right: 1px solid #fff
+				padding-right: 10px
+				&:hover
+					text-decoration: underline
+		li:last-child
+			a
+				border-right: none
 
 
 

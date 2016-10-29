@@ -29,38 +29,97 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container">
-      <div class="row">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Меню</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <div class="logo">
-              <img src="images/logo.png" alt="logo smart law">
-            </div><!-- logo -->
-          </a>
-        </div><!-- navbar-header -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Решения для бизнеса</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
+<div class="container no-padding">
+  <div class="header">
+    <div class="col-md-4">
+      <div class="header__logo">
+        <img src="images/logo.png" alt="fotozack.de" />
+      </div><!-- header__logo -->
     </div>
-  </div><!-- /.container-fluid -->
-</nav>
+    <div class="col-md-4 col-md-offset-4">
+      <div class="header__cart">
+        <div class="cart">
+          <div class="cart__icon">
+            <i class="icon icon-unisex"></i>
+          </div><!-- cart__icon -->
+          <div class="cart__menu">
+            <h3>Hallo!</h3>
+            <ul>
+              <li ><a href="#" id="warenkorb">Warenkorb (<span>123456,00</span> €)</a></li>
+              <li ><a href="#" id="konto">Konto & Einstellungen</a></li>
+              <li ><a href="#" id="abmelden">Abmelden</a></li>
+            </ul>
+          </div><!-- cart__menu -->
+          <form action="" method="get">
+            <input type="text" name="s" placeholder="Suche" required="required"/>
+            <button type="submit" name="search">
+              <i class="icon icon-search"></i>
+            </button>
+          </form>
+        </div><!-- cart -->
+        <div class="search">
 
+        </div><!-- search -->
+      </div><!-- header__cart -->
+    </div>
+  </div><!-- header -->
+</div><!-- container -->
+
+<div class="container no-padding">
+  <nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="row">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Меню</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--<a class="navbar-brand" href="/">-->
+          <!--<div class="logo">-->
+            <!--<img src="images/logo.png" alt="logo smart law">-->
+          <!--</div>&lt;!&ndash; logo &ndash;&gt;-->
+        <!--</a>-->
+      </div><!-- navbar-header -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Menü</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a class="active" href="#">Versand</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">Wiederrufsrecht</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+</div><!-- /.container -->
+
+<div class="container">
+  <div class="row">
+    <div class="inform">
+      <div class="inform__list">
+        <ul>
+          <li><a href="#">&laquo;&nbsp; Canon <b>CashBack</b> 25.10.13-14.01.14 </a></li>
+          <li><a href="#">günstige <b><span>4,50</span>€</b> Versandkosten</a></li>
+          <li><a href="#">Beratung nötig? <b>Einfach anrufen!</b> &nbsp;&raquo;</a></li>
+        </ul>
+      </div><!-- inform__list -->
+    </div><!-- inform -->
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="slider">
+      
+    </div><!-- slider -->
+  </div>
+</div>
 
 
 <footer class="footer">
