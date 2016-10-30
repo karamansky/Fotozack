@@ -2,14 +2,14 @@
 $(function(){
 	$(document).ready(function(){
 
-		// $('.slider').owlCarousel({
-		// 	slideSpeed : 300,
-		// 	paginationSpeed : 400,
-		// 	singleItem:true,
-		// 	autoPlay: true
-		// });
+		$('.slider-wrap').owlCarousel({
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem:true,
+			autoPlay: true
+		});
 
-		
+
 /*смена иконок корзины при ховере*/
 		$("#warenkorb").hover(
 				function(){

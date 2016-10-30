@@ -2262,6 +2262,7 @@ li {
   display: block;
   background-size: 100%; }
 
+/*** 50 * 50 ***/
 .icon-cart {
   background: url("../images/icon-cart.png") center no-repeat;
   width: 50px;
@@ -2297,10 +2298,27 @@ li {
   width: 50px;
   height: 50px; }
 
+/*** 30 * 30 ***/
 .icon-search {
   background: url("../images/icon-search.png") center no-repeat;
   width: 30px;
   height: 30px; }
+
+/*** 27 * 27 ***/
+.icon-cart-blue {
+  width: 27px;
+  height: 27px;
+  background: url("../images/icon-cart-arrow-blue.png") center no-repeat; }
+
+.icon-info-blue {
+  width: 27px;
+  height: 27px;
+  background: url("../images/icon-info-blue.png") center no-repeat; }
+
+.icon-info-white {
+  width: 27px;
+  height: 27px;
+  background: url("../images/icon-info-white.png") center no-repeat; }
 
 body {
   background-color: #f5f5f5; }
@@ -2398,6 +2416,127 @@ body {
           text-decoration: underline; }
     .inform .inform__list li:last-child a {
       border-right: none; }
+
+.slider {
+  position: relative;
+  margin-top: 10px; }
+  .slider .slider__caption {
+    background: rgba(242, 242, 242, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0 12px 12px; }
+    .slider .slider__caption h3 {
+      color: #0277B4;
+      float: left; }
+    .slider .slider__caption ul {
+      float: right; }
+      .slider .slider__caption ul li {
+        float: left; }
+    .slider .slider__caption a {
+      display: block;
+      margin-right: 19px; }
+
+.owl-theme .owl-controls {
+  margin-top: 0;
+  position: absolute;
+  text-align: center;
+  right: 7px;
+  top: 20px; }
+
+.owl-theme .owl-controls .owl-page {
+  display: block;
+  opacity: 1; }
+
+.owl-theme .owl-controls .owl-page.active span {
+  background: #0277B4; }
+
+.owl-theme .owl-controls .owl-page span {
+  width: 38px;
+  height: 6px;
+  border: 1px solid #0277B4;
+  background: #fff;
+  border-radius: 0;
+  margin: 0 0 2px 0; }
+
+.prod {
+  position: relative;
+  background: #E3E3E3;
+  overflow: hidden;
+  padding: 2px 10px;
+  margin-top: 10px; }
+  .prod img {
+    width: 100%; }
+
+.prod__caption {
+  margin-top: -14px;
+  background: #0277B4;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+  .prod__caption a {
+    padding: 3px 0;
+    display: block;
+    margin: 0 auto; }
+    .prod__caption a .icon-info-white {
+      width: 100%; }
+
+.inform-black .inform {
+  background: #333333;
+  background: -webkit-linear-gradient(top, #333333 0%, #000000 60%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), color-stop(60%, #000000));
+  background: linear-gradient(to bottom, #333333 0%, #000000 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  margin: 20px 0; }
+  .inform-black .inform a {
+    font-size: 15px;
+    padding-right: 5px; }
+    .inform-black .inform a:hover {
+      font-family: "Roboto-Bold", sans-serif; }
+
+.inform-black .inform__list li {
+  padding: 5px 0 5px 5px; }
+
+.product .product__item {
+  background: #b1b3b6;
+  background: -webkit-linear-gradient(top, #b1b3b6 0%, #fbfbfb 54%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b1b3b6), color-stop(54%, #fbfbfb));
+  background: linear-gradient(to bottom, #b1b3b6 0%, #fbfbfb 54%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-grey-gradient', endColorstr='$bot-grey-gradient',GradientType=0 );
+  padding: 5px 10px 5px 10px; }
+
+.product .head h2 {
+  color: #000; }
+
+.product .head h5 {
+  color: #727272;
+  font-family: "Roboto-Light", sans-serif; }
+
+.product .img-box {
+  text-align: right; }
+
+.product .price-box {
+  background: #0277B4;
+  color: #fff;
+  margin: 0 -10px;
+  overflow: hidden;
+  padding: 8px 12px 7px 12px; }
+  .product .price-box .price {
+    float: left; }
+    .product .price-box .price p {
+      font-family: "Roboto-Black", sans-serif;
+      font-size: 16px;
+      line-height: 19px; }
+  .product .price-box .description {
+    float: right; }
+    .product .price-box .description p {
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 10px;
+      line-height: 8px; }
+    .product .price-box .description a {
+      text-decoration: underline; }
 
 @media screen and (max-width: 1281px) {
   .wrapper .container-big {
