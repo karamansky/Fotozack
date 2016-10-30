@@ -66,6 +66,13 @@ li {
   padding-left: 0;
   padding-right: 0; }
 
+#top {
+  bottom: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 30px; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

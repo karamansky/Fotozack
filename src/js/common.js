@@ -2,6 +2,8 @@
 $(function(){
 	$(document).ready(function(){
 
+
+/*owl-carousel index-page slider*/
 		$('.slider-wrap').owlCarousel({
 			slideSpeed : 300,
 			paginationSpeed : 400,
@@ -9,7 +11,7 @@ $(function(){
 			autoPlay: true
 		});
 
-/*смена иконок корзины при ховере*/
+/*change cart icon on hover li*/
 		$("#warenkorb").hover(
 				function(){
 					$(".cart__icon > i").removeClass().addClass("icon icon-cart");
@@ -33,7 +35,7 @@ $(function(){
 		});
 
 
-/*Клик по товару - добавление в сравнение*/
+/*Click on product - add / compare*/
 		$(".product__item .img-box").on("click", function(){
 				if ($(this).parent().find(".overlay").css('display') == 'none') {
 					$(this).parent().find(".overlay").fadeIn(500);
@@ -48,7 +50,7 @@ $(function(){
 					$(this).fadeOut(500);
 		});
 
-/*Всплывающие подсказки*/
+/*popover block*/
 	$(".companies li").hover(
 			function(){
 				$(this).find(".popover").css("display","block");
@@ -57,6 +59,31 @@ $(function(){
 				$(this).find(".popover").css("display","none");
 			}
 	);
+
+/*To top button*/
+
+		var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+		var delay = 1000; // Задержка прокрутки
+		$(document).ready(function() {
+			$(window).scroll(function () { // При прокрутке попадаем в эту функцию
+				/* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+				if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+				else $('#top').fadeOut();
+			});
+			$('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+				/* Плавная прокрутка наверх */
+				$('body, html').animate({
+					scrollTop: 0
+				}, delay);
+			});
+		});
+
+
+		
+
+
+
+
 
 
 
