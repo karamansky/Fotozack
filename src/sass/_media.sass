@@ -1,16 +1,6 @@
 @import "bourbon"
 @import "vars"
 
-@media screen and (max-width: $desktop) //1281
-	.wrapper
-		.container-big
-			width: 1280px
-
-
-@media screen and (max-width: 1200px)
-	//.under-menu .second-menu__item
-
-
 @media screen and (max-width: 1024px) //1024
 	.wrapper
 		.container-big
@@ -18,13 +8,79 @@
 
 
 @media screen and (max-width: $tablet) //992
-	.navbar-default .navbar-nav > li
-		margin-right: 10px
+	.header .header__cart
+		position: relative
+		right: 0
+		top: 0
+		z-index: 2
+
+	.header .cart input[type=text], .slider img
+		width: 100%
+
+	.inform-black .inform a
+		font-size: 12px
+
+	.product .head h5, .overlay h5
+		font-size: 13px
+
+	.overlay .td a
+		font-size: 10px
+
+	.product .price-box .price p
+		font-size: 14px
+
+	.companies, .footer__contacts ul
+		overflow: hidden
+		display: inline-block
+
+	.footer .footer__body .footer__contacts
+		text-align: center
+
 
 
 @media screen and (max-width: $phone) //768
-	.map-block form button, .map-block form button:focus
-		width: 9%
+	.navbar-default .navbar-toggle
+		float: left
+		margin-left: 30px
+
+	.navbar-nav li a
+		font-size: 20px
+
+	.navbar-nav
+		display: none
+
+	.in .navbar-nav
+		display: block
+
+	.navbar-nav a.active
+		background: $blue
+		color: #fff!important
+
+	.inform .inform__list li
+		float: none
+
+	.inform .inform__list li a
+		border-right: none
+
+	.prod h3
+		text-align: center
+		margin: 15px 0
+
+	.inform-black .inform a
+		font-size: 16px
+
+	.product .head h2, .product .img-box, .product .head h5
+		text-align: center
+		position: relative
+
+	.footer .footer__body .companies li
+		float: none
+		display: inline-block
+
+	.footer .footer__body .companies
+		display: none
+
+
 
 @media screen and (max-width: 600px)
 	.footer .footer__menu-soc
@@ -33,6 +89,12 @@
 @media screen and (max-width: $extra-small) //iPhone6
 	h1
 		font-size: 23px
+
+	.inform, .slider-wrap, .slider
+		display: none
+
+	.pager-wrap p
+		display: none
 
 
 @media screen and (max-width: 325px) //iPhone5

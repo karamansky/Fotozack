@@ -23,6 +23,7 @@ body
 		z-index: 10
 		+gradient($top-black-gradient, $bot-black-gradient)
 		padding: 20px 12px 12px 12px
+		max-height: 206px
 
 	.cart
 		overflow: hidden
@@ -192,14 +193,25 @@ body
 
 	.product__item
 		+grey-gradient($top-grey-gradient, $bot-grey-gradient)
-		padding: 5px 10px 5px 10px
+		padding: 8px 10px 5px 10px
+		position: relative
+		margin-bottom: 15px
 
 	.head
+		position: relative
+		margin-bottom: 10px
+
 		h2
-			color: #000
+			line-height: 36px
+			a
+				color: #000
+				&:hover
+					color: $blue
 		h5
 			color: $dark-grey
 			font-family: $r-light
+			position: absolute
+
 
 	.img-box
 		text-align: right
@@ -209,22 +221,202 @@ body
 		color: #fff
 		margin: 0 -10px
 		overflow: hidden
-		padding: 8px 12px 7px 12px
+		padding: 7px 12px 7px 12px
 
 		.price
 			float: left
 			p
 				font-family: $r-black
 				font-size: 16px
-				line-height: 19px
+				line-height: 21px
 
 		.description
 			float: right
+			padding-top: 2px
 			p
 				font-family: $r-regular
 				font-size: 10px
-				line-height: 8px
+				line-height: 9px
 			a
 				text-decoration: underline
+
+	.overlay
+		display: none
+		background: $blue
+		margin: 0 -10px
+		position: absolute
+		width: 100%
+		height: 143px
+		top: 41px
+		padding: 3px 11px
+		border-bottom: 1px solid #fff
+
+		.head
+			margin-bottom: 5px
+			h5
+				position: relative
+				color: #fff
+
+		.to-cart
+			display: table
+			margin: 0 auto
+		.tr
+			text-align: left
+			margin-bottom: 5px
+
+		.tr .td:first-child
+			padding-right: 12px
+		.td
+			display: table-cell
+			vertical-align: middle
+			text-transform: uppercase
+			text-align: left
+			letter-spacing: 1px
+			color: #fff
+
+		a:hover
+			text-decoration: underline
+			cursor: pointer
+			color: #fff
+
+.pager-wrap
+	+gradient($top-black-gradient, $bot-black-gradient)
+	padding: 0 10px
+	overflow: hidden
+	margin-bottom: 13px
+	i
+		float: left
+	p
+		color: #fff
+		display: inline-block
+		margin-left: 10px
+		padding-top: 12px
+		float: left
+
+	.pager
+		float: right
+		padding-top: 10px
+		width: 155px
+		ul
+			text-align: right
+		li
+			float: left
+			width: 23px
+			height: 23px
+			text-align: center
+
+		li:hover, li.active
+			border: 1px solid #fff
+			border-radius: 50%
+			cursor: pointer
+
+.footer
+	.footer__head
+		+gradient($top-black-gradient, $bot-black-gradient)
+		overflow: hidden
+		padding: 7px 0
+
+		.head__left
+			float: left
+			padding-left: 10px
+
+		.head__right
+			float: right
+			padding-right: 10px
+
+	h5, a
+		color: #fff
+
+	.footer__body
+		+gradient($top-grey-gradient, $bot-grey-gradient)
+		padding-bottom: 26px
+
+		.companies
+			padding-top: 17px
+			li
+				float: left
+				margin-right: 15px
+				position: relative
+
+			ul li:last-child
+				margin-right: 0
+
+			.popover
+				display: none
+				position: absolute
+				top: -90px
+				left: -60px
+				width: 220px
+				background: #f5f5f5
+				padding: 3px 6px
+				border: 1px solid $dark-grey
+				&:after
+					content: ''
+					position: absolute
+					bottom: -20px
+					left: 100px
+					border: 6px solid transparent
+					border-top: 15px solid #f5f5f5
+
+				p
+					color: $dark-grey
+					font-size: 12px
+
+				b
+					font-family: $r-bold
+
+		.footer__contacts
+			padding-top: 8px
+			text-align: right
+
+			p
+				color: $dark-grey
+				font-size: 12px
+				margin-bottom: 8px
+
+				span
+					font-family: $r-thin
+					font-size: 28px
+					color: $blue
+
+			ul li
+				float: left
+				margin-right: 33px
+				text-align: right
+
+			ul li:last-child
+				margin-right: 0
+
+	.footer__copy
+		background: $footer-grey
+		text-align: center
+		overflow: hidden
+		padding: 10px 0 15px
+		p
+			margin-bottom: 13px
+		p, a
+			font-family: $r-regular
+			font-size: 10px
+			line-height: 12px
+			color: $dark-grey
+		ul
+			display: inline-block
+		li
+			float: left
+			padding-left: 4px
+			font-size: 10px
+			line-height: 9px
+			a
+				padding-right: 4px
+				border-right: 1px solid $dark-grey
+				&:hover
+					text-decoration: underline
+		li:last-child a
+				padding-right: 0px
+				border-right: none
+
+
+
+
 
 @import "media"
