@@ -296,9 +296,10 @@ body
 	.pager
 		float: right
 		padding-top: 10px
-		width: 155px
+		//width: 155px
 		ul
 			text-align: right
+			overflow: hidden
 		li
 			float: left
 			width: 23px
@@ -309,6 +310,12 @@ body
 			border: 1px solid #fff
 			border-radius: 50%
 			cursor: pointer
+
+		li.arr:hover
+			border: none
+
+		a
+			display: inline-block
 
 .footer
 	.footer__head
@@ -415,8 +422,83 @@ body
 				padding-right: 0px
 				border-right: none
 
+.products-head
+	padding: 7px 5px 7px 20px
+	overflow: hidden
+
+	p
+		color: #fff
+		display: inline-block
+		float: left
+
+	b
+		font-family: $r-black
+
+	.buttons
+		float: right
+		color: #fff
+		overflow: hidden
+		span
+			padding: 0 13px
+			float: left
+		i
+			float: left
+			margin: 3px 3px 0 0
 
 
 
+.search
+	.black
+		+gradient($top-black-gradient, $bot-black-gradient)
+		margin: -10px -10px 0 -10px
+		//padding: 9px
+		display: block
+		.head
+			color: #fff
+			text-align: center
+			padding-bottom: 38px
+			h2
+				text-transform: uppercase
+				span
+					font-size: 30px
+			h5
+				text-align: center
+				position: relative
+				font-size: $r-regular
+				color: #fff
+		form
+			text-align: center
+			padding: 0 10px 15px 10px
+		input
+			width: 100%
+			margin: 0 auto
+			text-overflow: ellipsis
+			padding: 4px 10px
+			border-radius: 5px
+			border: none
+		.price-box
+			margin: 0
+			a
+				display: block
+				text-align: center
+				&:hover
+					text-decoration: underline
+			i
+				margin: 0 auto
+
+.tags
+	overflow: hidden
+	margin-bottom: 18px
+	p
+		font-size: 15px
+		line-height: 26px
+		float: left
+		margin-right: 7px
+		color: $dark-grey
+		font-family: $r-regular
+	a
+		color: $dark-grey
+		&:hover
+			text-decoration: underline
 
 @import "media"

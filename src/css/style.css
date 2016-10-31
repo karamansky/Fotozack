@@ -2280,6 +2280,17 @@ li {
   height: 22px;
   background: url("../images/icon-arrow-right-white.png") center no-repeat; }
 
+/*** 24 * 14 ***/
+.icon-arrow-top {
+  width: 24px;
+  height: 14px;
+  background: url("../images/icon-arrow-top-white.png") center no-repeat; }
+
+.icon-arrow-bottom {
+  width: 24px;
+  height: 14px;
+  background: url("../images/icon-arrow-bottom-white.png") center no-repeat; }
+
 /*** 27 * 27 ***/
 .icon-cart-blue {
   width: 27px;
@@ -2305,6 +2316,12 @@ li {
   width: 27px;
   height: 27px;
   background: url("../images/icon-star.png") center no-repeat; }
+
+/*** 30 * 20 ***/
+.icon-arrow-exit {
+  width: 30px;
+  height: 20px;
+  background: url("../images/icon-arrow-exit.png") center no-repeat; }
 
 /*** 30 * 30 ***/
 .icon-search {
@@ -2642,10 +2659,10 @@ body {
     float: left; }
   .pager-wrap .pager {
     float: right;
-    padding-top: 10px;
-    width: 155px; }
+    padding-top: 10px; }
     .pager-wrap .pager ul {
-      text-align: right; }
+      text-align: right;
+      overflow: hidden; }
     .pager-wrap .pager li {
       float: left;
       width: 23px;
@@ -2655,6 +2672,10 @@ body {
       border: 1px solid #fff;
       border-radius: 50%;
       cursor: pointer; }
+    .pager-wrap .pager li.arr:hover {
+      border: none; }
+    .pager-wrap .pager a {
+      display: inline-block; }
 
 .footer .footer__head {
   background: #333333;
@@ -2755,6 +2776,82 @@ body {
   .footer .footer__copy li:last-child a {
     padding-right: 0px;
     border-right: none; }
+
+.products-head {
+  padding: 7px 5px 7px 20px;
+  overflow: hidden; }
+  .products-head p {
+    color: #fff;
+    display: inline-block;
+    float: left; }
+  .products-head b {
+    font-family: "Roboto-Black", sans-serif; }
+  .products-head .buttons {
+    float: right;
+    color: #fff;
+    overflow: hidden; }
+    .products-head .buttons span {
+      padding: 0 13px;
+      float: left; }
+    .products-head .buttons i {
+      float: left;
+      margin: 3px 3px 0 0; }
+
+.search .black {
+  background: #333333;
+  background: -webkit-linear-gradient(top, #333333 0%, #000000 60%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), color-stop(60%, #000000));
+  background: linear-gradient(to bottom, #333333 0%, #000000 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  margin: -10px -10px 0 -10px;
+  display: block; }
+  .search .black .head {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 38px; }
+    .search .black .head h2 {
+      text-transform: uppercase; }
+      .search .black .head h2 span {
+        font-size: 30px; }
+    .search .black .head h5 {
+      text-align: center;
+      position: relative;
+      font-size: "Roboto-Regular", sans-serif;
+      color: #fff; }
+  .search .black form {
+    text-align: center;
+    padding: 0 10px 15px 10px; }
+  .search .black input {
+    width: 100%;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none; }
+  .search .black .price-box {
+    margin: 0; }
+    .search .black .price-box a {
+      display: block;
+      text-align: center; }
+      .search .black .price-box a:hover {
+        text-decoration: underline; }
+    .search .black .price-box i {
+      margin: 0 auto; }
+
+.tags {
+  overflow: hidden;
+  margin-bottom: 18px; }
+  .tags p {
+    font-size: 15px;
+    line-height: 26px;
+    float: left;
+    margin-right: 7px;
+    color: #727272;
+    font-family: "Roboto-Regular", sans-serif; }
+  .tags a {
+    color: #727272; }
+    .tags a:hover {
+      text-decoration: underline; }
 
 @media screen and (max-width: 1024px) {
   .wrapper .container-big {
