@@ -63,8 +63,8 @@ gulp.task("clearCache", function(){
 gulp.task("minJsLibs", function(){
 	del.sync("src/js/libs.min.js"); // удаляем старую сборку
 	return gulp.src([
-				'src/libs/jquery/dist/jquery.min.js',
-				'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+				//'src/libs/jquery/dist/jquery.min.js',
+				// 'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 				 'src/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 				// 'src/libs/Headhesive.js/dist/headhesive.min.js',
 				 'src/libs/owl-carousel/owl-carousel/owl.carousel.min.js'

@@ -89,13 +89,15 @@ body
 
 .inform
 	background-color: $blue
+	padding: 5px 0 5px 0
+	color: #fff
 	.inform__list
 		overflow: hidden
-		ul
-			padding-left: 15px
+		ul, p
+			padding-left: 12px
 		li
 			float: left
-			padding: 5px 0 5px 10px
+			padding-right: 10px
 			a
 				border-right: 1px solid #fff
 				padding-right: 10px
@@ -196,6 +198,7 @@ body
 		padding: 8px 10px 5px 10px
 		position: relative
 		margin-bottom: 15px
+		min-height: 216px
 
 	.head
 		position: relative
@@ -219,7 +222,7 @@ body
 	.price-box
 		background: $blue
 		color: #fff
-		margin: 0 -10px
+		margin: 0 -10px -5px -10px
 		overflow: hidden
 		padding: 7px 12px 7px 12px
 
@@ -278,6 +281,20 @@ body
 			text-decoration: underline
 			cursor: pointer
 			color: #fff
+
+
+.product-suggest
+	.product__item
+		+gradient($top-black-gradient, $bot-black-gradient)
+		.head
+			h2 a
+				color: #fff!important
+			h5
+				color: #fff
+
+		.price-desc
+			font-family: $r-regular
+			font-size: 10px
 
 .pager-wrap
 	+gradient($top-black-gradient, $bot-black-gradient)
@@ -533,9 +550,171 @@ body
 			width: auto
 
 
+.breadcrumbs
+	padding: 10px 0
+
+	ul
+		overflow: hidden
+		li
+			float: left
+			padding-right: 7px
+			&:before
+				content: "»"
+				margin-right: 7px
+				color: $blue
+
+		li:first-child:before
+			content: ""
+			margin: 0
+
+		a
+			font-size: 12px
+			color: $blue
+			&:hover
+				text-decoration: underline
+		.active
+			font-family: $r-bold
 
 
+.product-cart
+	h1
+		margin: 0
+		color: #000
+	h3.overflow
+		display: block
+		height: 90px
+		font-size: 22px
+		font-family: $r-regular
+		color: $dark-grey
+		overflow: hidden
+	p
+		font-family: $r-light
+		font-size: 14px
+		line-height: 17px
+		color: $dark-grey
+
+	p.overflow
+		overflow: hidden
+		height: 210px
+		-moz-hyphens: auto
+		-webkit-hyphens: auto
+		-ms-hyphens: auto
 
 
+	.price-block
+		h2
+			color: $blue
+			line-height: 30px
+		&>span
+			font-size: 10px
+			color: $dark-grey
 
+	.bottom
+		background: $blue
+		color: #fff
+		overflow: hidden
+		margin-top: 20px
+		padding: 6px 60px 4px 30px
+
+		.add-item
+			float: left
+			i, span
+				float: left
+			span#items-count
+				font-size: 24px
+				line-height: 30px
+				padding-right: 18px
+				padding-left: 18px
+
+			i:hover
+				cursor: pointer
+
+		.add-to-cart
+			float: right
+			button
+				overflow: hidden
+				border: none
+				background: transparent
+				text-transform: uppercase
+				font-family: $r-light
+				font-size: 12px
+				line-height: 30px
+				i
+					float: left
+					margin-right: 15px
+				&:hover
+					color: $grey
+
+.product-description
+	.table-head
+			background: $blue
+			width: 100%
+			color: #fff
+			padding: 6px 12px
+			text-transform: uppercase
+
+	table, tbody
+		width: 100%
+		tr
+			background: $grey
+			td
+				padding: 10px
+			td:first-child
+				font-family: $r-bold
+				width: 30%
+				vertical-align: top
+		tr:nth-child(2n)
+			background: $light-grey
+
+	
+.slides-wrap
+	overflow: hidden
+
+	#slides
+		margin-top: 13px
+		position: relative
+		img
+			width: 100%
+
+	#slides .next, #slides .prev
+		position: absolute   
+		top: 50%
+		margin-top: -22px
+		width: 24px
+		height: 43px   
+		display: block   
+		z-index: 101   
+
+	.slides_container  
+		width: 100%
+		height: 455px!important
+		overflow: hidden
+		position: relative
+
+	#slides .prev
+		left: 5px
+	#slides .next  
+		right: 5px
+
+	.pagination  
+		margin: 26px auto 0   
+		width: 100px
+	  
+	.pagination li  
+		float: left   
+		margin: 0 1px   
+		list-style:  none
+	  
+	
+	.pagination li a  
+		display: block   
+		width: 12px   
+		height: 12px   
+		float: left   
+		overflow: hidden   
+	  
+	
+	
+	
+	
 @import "media"

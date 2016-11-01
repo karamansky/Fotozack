@@ -11,6 +11,18 @@ $(function(){
 			autoPlay: true
 		});
 
+/*slider for product-cart*/
+		$('#slides').slides({
+			preload: true,
+			preloadImage: 'images/loading.gif',
+			play: 5000,
+			pause: 2500,
+			hoverPause: true
+		});
+		$(".slides_container").on("click",function(e){
+			event.preventDefault(e);
+		});
+
 /*change cart icon on hover li*/
 		$("#warenkorb").hover(
 				function(){
@@ -78,7 +90,19 @@ $(function(){
 			});
 		});
 
-
+/*add product item*/
+		$(".add-item i.minus").on("click",function(){
+			var count = $("#items-count").html();
+			if(count > 1){
+				count--;
+				$("#items-count").html(count);
+			}
+		});
+		$(".add-item i.plus").on("click",function(){
+			var count = $("#items-count").html();
+			count++;
+			$("#items-count").html(count);
+		});
 		
 
 

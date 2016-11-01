@@ -91,6 +91,18 @@
 	#top
 		display: none!important
 
+	.product-cart h3.overflow
+		height: auto
+		padding-bottom: 10px
+
+	.product-cart p.overflow
+		height: auto
+		padding-bottom: 20px
+
+	.navbar .row
+		margin-right: 0
+		margin-left: 0
+
 @media screen and (max-width: 600px)
 	.footer .footer__menu-soc
 		float: left
@@ -105,7 +117,20 @@
 	.pager-wrap p
 		display: none
 
+	.product .product__item .img-box img
+		text-align: center
+		width: 100%
+
 
 @media screen and (max-width: 325px) //iPhone5
 	.nav
 		display: none
+
+	table tr td:last-child
+		overflow-wrap: break-word
+		word-wrap: break-word
+		word-break: break-all
+		line-break: strict
+		-webkit-hyphens: auto
+		-ms-hyphens: auto
+		hyphens: auto
