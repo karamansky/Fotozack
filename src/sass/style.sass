@@ -179,7 +179,7 @@ body
 .inform-black
 	.inform
 		+gradient($top-black-gradient, $bot-black-gradient)
-		margin: 20px 0
+		margin: 15px 0
 
 		a
 			font-size: 15px
@@ -680,8 +680,8 @@ body
 		position: absolute   
 		top: 50%
 		margin-top: -22px
-		width: 24px
-		height: 43px   
+		width: 40px
+		height: 65px
 		display: block   
 		z-index: 101   
 
@@ -696,25 +696,81 @@ body
 	#slides .next  
 		right: 5px
 
-	.pagination  
-		margin: 26px auto 0   
-		width: 100px
-	  
+	.pagination-wrap
+		+gradient($top-black-gradient, $bot-black-gradient)
+		overflow: hidden
+		position: relative
+		z-index: 5
+		padding: 8px 9px 2px 9px
+		margin: -12px auto 0 auto
+		text-align: center
+
+		i:first-child
+			cursor: pointer
+			float: left
+			display: inline-block
+
+		i:last-child
+			cursor: pointer
+			float: right
+			display: inline-block
+
+	.pagination
+		display: inline-block
+		margin: 0 auto
+		overflow: hidden
+
 	.pagination li  
 		float: left   
-		margin: 0 1px   
+		margin: 0 1px
 		list-style:  none
-	  
-	
+		&.current
+			border: 1px solid #fff
+			border-radius: 50%
+			font-family: $r-bold
+
 	.pagination li a  
-		display: block   
-		width: 12px   
-		height: 12px   
-		float: left   
-		overflow: hidden   
-	  
-	
-	
-	
-	
+		display: block
+		font-size: 15px
+		line-height: 24px
+		width: 23px
+		height: 23px
+		float: left
+		padding-right: 2px
+		text-align: center
+		overflow: hidden
+
+
+.compare
+	.product__item
+		padding-left: 50px
+		padding-right: 50px
+		.img-box
+			text-align: center
+		.price-box
+			margin-left: -50px
+			margin-right: -50px
+			padding: 10px 50px 11px 50px
+
+.compare-table
+	margin-bottom: 17px
+	table
+		width: 100%
+	tr
+		background: $light-grey
+		td
+			font-family: $r-light
+			font-size: 14px
+			color: $dark-grey
+			padding: 4px 12px 4px 12px
+
+		td:first-child
+			width: 33.3%
+			font-family: $r-bold
+
+	tr:nth-child(2n)
+		background:	$grey
+
+
+
 @import "media"
