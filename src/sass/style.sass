@@ -788,4 +788,63 @@ body
 				font-family: $r-bold
 				background: $blue
 
+				input[type='checkbox'] + label:after
+					border: 1px solid #fff
+					background: $grey
+
+				input[type='checkbox']:checked + label:after
+					background: $blue
+					border: 1px solid #fff
+
+	input[type='checkbox']  
+		display: none  
+		cursor: pointer  
+	 
+	input[type='checkbox']:focus,
+	input[type='checkbox']:active 
+		outline: none  
+	 
+	.checkbox
+		cursor: pointer  
+		display: inline-block  
+		position: relative  
+		padding-left: 20px
+
+	.checkbox:before,
+	.checkbox:after  
+		content: ''  
+		display: inline-block  
+		width: 9px
+		height: 9px
+		border: 1px solid $blue
+		left: 0
+		top: 4px
+		text-align: center  
+		position: absolute  
+	 
+	.checkbox:before
+		background-color: $grey
+		border: 1px solid $blue
+		transition: all .3s ease-in-out
+
+	input[type='checkbox']:checked + label:before 
+		background: $blue
+
+	.checkbox:hover:after,	input[type='checkbox']:checked + label:after
+		position: absolute  
+		top: 4px
+		right: 0px
+		width: 9px
+		height: 9px
+		background: $blue
+
+	.checkbox:hover:after  
+		color: #c7c7c7  
+	 
+	
+	.checkbox:after,
+	.checkbox:hover:after  
+		color: #10acdc  
+	 
+
 @import "media"

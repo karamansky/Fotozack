@@ -1,6 +1,18 @@
 @import "bourbon"
 @import "vars"
 
+@media screen and (max-width: 1280px)
+	table tr td:nth-child(2),
+	table tr td:nth-child(3)
+		overflow-wrap: break-word
+		word-wrap: break-word
+		word-break: break-all
+		line-break: strict
+		-webkit-hyphens: auto
+		-ms-hyphens: auto
+		hyphens: auto
+
+
 @media screen and (max-width: 1024px) //1024
 	.wrapper
 		.container-big
@@ -60,6 +72,10 @@
 				margin-left: -10px
 				margin-right: -10px
 				padding: 10px 10px 11px 10px
+
+	.filter__block li
+		padding: 10px 25px
+		font-size: 14px
 
 
 @media screen and (max-width: $phone) //768
@@ -126,6 +142,16 @@
 		text-align: center
 		margin-bottom: 17px
 
+	table tr td:last-child
+		-webkit-hyphens: auto
+		-ms-hyphens: auto
+		hyphens: auto
+		overflow-wrap: normal
+		word-wrap: normal
+		word-break: normal
+		line-break: normal
+
+
 @media screen and (max-width: 600px)
 	.footer .footer__menu-soc
 		float: left
@@ -133,7 +159,18 @@
 	.slides_control a
 		margin-left: 0!important
 
+	.product-description table tr td:first-child, .product-description tbody tr td:first-child
+		width: auto
+		display: block
+
+	.product-description table tr td, .product-description tbody tr td
+		padding: 10px 0px 10px 10px
+		display: block
+
 @media screen and (max-width: $extra-small) //iPhone6
+	.header__logo img
+		width: 100%
+
 	h1
 		font-size: 23px
 
@@ -158,14 +195,14 @@
 	.nav
 		display: none
 
-	table tr td:last-child
-		overflow-wrap: break-word
-		word-wrap: break-word
-		word-break: break-all
-		line-break: strict
-		-webkit-hyphens: auto
-		-ms-hyphens: auto
-		hyphens: auto
+	.cart__icon .icon
+		width: 40px
+		height: 40px
+		background-size: 100%
+
+	.cart__icon .icon-lock
+		width: 40px
+		height: 52px
 
 	.product-cart .bottom
 		padding: 6px 30px 4px 30px
