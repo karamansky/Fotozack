@@ -2275,7 +2275,7 @@ li {
 
 .icon {
   display: block;
-  background-size: 100% !important; }
+  background-size: 100%; }
 
 /*** 14 * 12 ***/
 .icon-triple-arrow-left {
@@ -2398,7 +2398,12 @@ li {
 .icon-pencil--blue {
   width: 30px;
   height: 30px;
-  background: url("../images/icon-pencil--blue.png") center no-repeat; }
+  background: url("../images/icon-pencil-blue.png") center no-repeat; }
+
+.icon-trash {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icon-trash-blue.png") center no-repeat; }
 
 .icon-book {
   width: 30px;
@@ -2419,6 +2424,16 @@ li {
   width: 30px;
   height: 30px;
   background: url("../images/icon-dislike.png") center no-repeat; }
+
+.icon-ok {
+  width: 30px;
+  height: 35px;
+  background: url("../images/icon-ok.png") center no-repeat; }
+
+.icon-ok-blue {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icon-ok-blue.png") center no-repeat; }
 
 /*** 41 * 41 ***/
 .icon-compare-grey {
@@ -3272,140 +3287,144 @@ body {
 .filter .checkbox:hover:after {
   color: #10acdc; }
 
-.admin-form {
-  margin-top: -15px; }
-  .admin-form form + a {
-    color: #727272;
-    font-size: 15px;
-    line-height: 25px;
-    margin: 18px 20px 65px;
-    display: inline-block; }
-    .admin-form form + a:hover {
-      text-decoration: underline; }
-    .admin-form form + a i {
-      float: left;
-      margin-right: 10px; }
-  .admin-form input, .admin-form select {
-    border-radius: 5px;
-    border: 1px solid #E4E4E4;
-    margin-bottom: 15px;
-    padding: 3px 10px;
-    text-overflow: ellipsis;
-    width: 275px; }
-  .admin-form .tr .td {
-    font-family: "Roboto-Regular", sans-serif;
-    color: #727272; }
-  .admin-form .tr .td:first-child {
-    width: 30%; }
-  .admin-form .form__body {
-    background: #FBFBFB;
-    background: -webkit-linear-gradient(top, #FBFBFB 0%, #B2B4B7 60%);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), color-stop(60%, #B2B4B7));
-    background: linear-gradient(to bottom, #FBFBFB 0%, #B2B4B7 60%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
-    padding: 30px 30px 30px 20px; }
-  .admin-form .form__submit {
-    overflow: hidden;
-    background: #0277B4;
-    text-align: center;
-    padding: 10px 0; }
-    .admin-form .form__submit button {
-      background: transparent;
-      border: none;
-      color: #fff;
-      font-size: 24px;
-      line-height: 35px; }
-    .admin-form .form__submit i {
-      margin-right: 17px;
-      width: 35px;
-      height: 35px;
-      background-size: 100%;
+.admin-form form + a {
+  color: #727272;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 18px 20px 65px;
+  display: inline-block; }
+  .admin-form form + a:hover {
+    text-decoration: underline; }
+  .admin-form form + a i {
+    float: left;
+    margin-right: 10px; }
+
+.admin-form input, .admin-form select {
+  border-radius: 5px;
+  border: 1px solid #E4E4E4;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  text-overflow: ellipsis;
+  width: 275px; }
+
+.admin-form .tr .td {
+  font-family: "Roboto-Regular", sans-serif;
+  color: #727272; }
+
+.admin-form .tr .td:first-child {
+  width: 30%; }
+
+.admin-form .form__body {
+  background: #FBFBFB;
+  background: -webkit-linear-gradient(top, #FBFBFB 0%, #B2B4B7 60%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), color-stop(60%, #B2B4B7));
+  background: linear-gradient(to bottom, #FBFBFB 0%, #B2B4B7 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  padding: 30px 30px 30px 20px; }
+
+.admin-form .form__submit {
+  overflow: hidden;
+  background: #0277B4;
+  text-align: center;
+  padding: 10px 0; }
+  .admin-form .form__submit button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    line-height: 35px; }
+  .admin-form .form__submit i {
+    margin-right: 17px;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    float: left; }
+
+.admin-form .admin-form__register {
+  margin-bottom: 25px; }
+  .admin-form .admin-form__register .tr .td:first-child {
+    width: 155px; }
+  .admin-form .admin-form__register input, .admin-form .admin-form__register select {
+    width: 265px; }
+  .admin-form .admin-form__register label span {
+    color: #0277B4;
+    line-height: 30px; }
+  .admin-form .admin-form__register input.error {
+    background: #FFCCCC; }
+  .admin-form .admin-form__register #PLZ {
+    float: left;
+    margin-right: 25px;
+    width: 98px; }
+  .admin-form .admin-form__register #Ort {
+    width: 98px;
+    margin-left: 10px; }
+    .admin-form .admin-form__register #Ort + label {
       float: left; }
-  .admin-form .admin-form__register {
-    margin-bottom: 25px; }
-    .admin-form .admin-form__register .tr .td:first-child {
-      width: 155px; }
-    .admin-form .admin-form__register input, .admin-form .admin-form__register select {
-      width: 265px; }
-    .admin-form .admin-form__register label span {
-      color: #0277B4;
-      line-height: 30px; }
-    .admin-form .admin-form__register input.error {
-      background: #FFCCCC; }
-    .admin-form .admin-form__register #PLZ {
-      float: left;
-      margin-right: 25px;
-      width: 98px; }
-    .admin-form .admin-form__register #Ort {
-      width: 98px;
-      margin-left: 10px; }
-      .admin-form .admin-form__register #Ort + label {
-        float: left; }
-    .admin-form .admin-form__register .toggle {
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      -webkit-transition: opacity .3s, max-height .3s;
-      transition: opacity .3s, max-height .3s;
-      display: none; }
-    .admin-form .admin-form__register .expanded {
-      max-height: 100px;
-      opacity: 1;
-      display: block; }
-    .admin-form .admin-form__register input[type='checkbox'], .admin-form .admin-form__register input[type='radio'] {
-      display: none;
-      cursor: pointer; }
-    .admin-form .admin-form__register input[type='checkbox']:focus,
-    .admin-form .admin-form__register input[type='radio']:focus,
-    .admin-form .admin-form__register input[type='checkbox']:active,
-    .admin-form .admin-form__register input[type='radio']:active {
-      outline: none; }
-    .admin-form .admin-form__register .checkbox {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      padding-left: 35px;
-      padding-bottom: 8px;
-      margin-right: 13px; }
-    .admin-form .admin-form__register .checkbox:before,
-    .admin-form .admin-form__register .checkbox:after {
-      content: '';
-      display: inline-block;
-      width: 28px;
-      height: 28px;
-      left: 0;
-      top: -4px;
-      text-align: center;
-      position: absolute; }
-    .admin-form .admin-form__register .checkbox:before {
-      background-color: #fff;
-      -webkit-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
-      border: 1px solid #E4E4E4;
-      border-radius: 5px; }
-    .admin-form .admin-form__register input[type='checkbox']:checked + label:before,
-    .admin-form .admin-form__register input[type='radio']:checked + label:before {
-      border: 1px solid #E4E4E4; }
-    .admin-form .admin-form__register input[type='checkbox']:checked + label:after,
-    .admin-form .admin-form__register input[type='radio']:checked + label:after {
-      position: absolute;
-      top: -4px;
-      right: 0;
-      width: 28px;
-      height: 28px;
-      background: url("../images/icon-ok-blue.png") center no-repeat; }
-    .admin-form .admin-form__register .checkbox:hover:after {
-      color: #c7c7c7; }
-    .admin-form .admin-form__register .checkbox:after,
-    .admin-form .admin-form__register .checkbox:hover:after {
-      color: #10acdc; }
-    .admin-form .admin-form__register #subscribe + label,
-    .admin-form .admin-form__register #AGB + label {
-      margin-right: 0;
-      padding-left: 40px; }
-    .admin-form .admin-form__register #subscribe + label,
-    .admin-form .admin-form__register #AGB + label, .admin-form .admin-form__register #AGB + label span {
-      line-height: 17px; }
+  .admin-form .admin-form__register .toggle {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: opacity .3s, max-height .3s;
+    transition: opacity .3s, max-height .3s;
+    display: none; }
+  .admin-form .admin-form__register .expanded {
+    max-height: 100px;
+    opacity: 1;
+    display: block; }
+  .admin-form .admin-form__register input[type='checkbox'], .admin-form .admin-form__register input[type='radio'] {
+    display: none;
+    cursor: pointer; }
+  .admin-form .admin-form__register input[type='checkbox']:focus,
+  .admin-form .admin-form__register input[type='radio']:focus,
+  .admin-form .admin-form__register input[type='checkbox']:active,
+  .admin-form .admin-form__register input[type='radio']:active {
+    outline: none; }
+  .admin-form .admin-form__register .checkbox {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 8px;
+    margin-right: 13px; }
+  .admin-form .admin-form__register .checkbox:before,
+  .admin-form .admin-form__register .checkbox:after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    left: 0;
+    top: -4px;
+    text-align: center;
+    position: absolute; }
+  .admin-form .admin-form__register .checkbox:before {
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px; }
+  .admin-form .admin-form__register input[type='checkbox']:checked + label:before,
+  .admin-form .admin-form__register input[type='radio']:checked + label:before {
+    border: 1px solid #E4E4E4; }
+  .admin-form .admin-form__register input[type='checkbox']:checked + label:after,
+  .admin-form .admin-form__register input[type='radio']:checked + label:after {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    background: url("../images/icon-ok-blue.png") center no-repeat; }
+  .admin-form .admin-form__register .checkbox:hover:after {
+    color: #c7c7c7; }
+  .admin-form .admin-form__register .checkbox:after,
+  .admin-form .admin-form__register .checkbox:hover:after {
+    color: #10acdc; }
+  .admin-form .admin-form__register #subscribe + label,
+  .admin-form .admin-form__register #AGB + label {
+    margin-right: 0;
+    padding-left: 40px; }
+  .admin-form .admin-form__register #subscribe + label,
+  .admin-form .admin-form__register #AGB + label, .admin-form .admin-form__register #AGB + label span {
+    line-height: 17px; }
 
 .trust .tr {
   display: block;
@@ -3436,7 +3455,8 @@ body {
   padding-bottom: 17px;
   margin-bottom: 70px; }
   .account-menu-wrap h4, .orders-wrap h4 {
-    font-family: "Roboto-Regular", sans-serif; }
+    font-family: "Roboto-Regular", sans-serif;
+    padding-left: 11px; }
   .account-menu-wrap p, .orders-wrap p {
     padding: 19px 10px 0 10px; }
 
@@ -3517,6 +3537,203 @@ body {
       font-size: 14px; }
     .orders-wrap .pager ul li:last-child {
       margin-right: 0; }
+
+.admin-form__address {
+  margin-bottom: 25px; }
+  .admin-form__address form + a {
+    color: #727272;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 18px 20px 65px;
+    display: inline-block; }
+    .admin-form__address form + a:hover {
+      text-decoration: underline; }
+    .admin-form__address form + a i {
+      float: left;
+      margin-right: 10px; }
+  .admin-form__address input, .admin-form__address select {
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+    margin-bottom: 20px;
+    padding: 3px 10px;
+    text-overflow: ellipsis;
+    width: 275px; }
+  .admin-form__address .form__body {
+    background: #FBFBFB;
+    background: -webkit-linear-gradient(top, #FBFBFB 0%, #C6C7C9 60%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), color-stop(60%, #C6C7C9));
+    background: linear-gradient(to bottom, #FBFBFB 0%, #C6C7C9 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+    padding: 3px 20px 30px 20px; }
+    .admin-form__address .form__body h4 {
+      margin-bottom: 18px;
+      font-family: "Roboto-Regular", sans-serif;
+      color: #727272; }
+    .admin-form__address .form__body p {
+      color: #727272;
+      margin-bottom: 13px; }
+  .admin-form__address .form__submit {
+    overflow: hidden;
+    background: #0277B4;
+    text-align: center;
+    padding: 10px 0; }
+    .admin-form__address .form__submit button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      line-height: 35px; }
+    .admin-form__address .form__submit i {
+      margin-right: 17px;
+      width: 35px;
+      height: 35px;
+      background-size: 100%;
+      float: left; }
+  .admin-form__address .tr .td:first-child {
+    width: 155px; }
+  .admin-form__address input, .admin-form__address select {
+    width: 265px; }
+  .admin-form__address label span {
+    color: #0277B4;
+    line-height: 30px; }
+  .admin-form__address input.error {
+    background: #FFCCCC; }
+  .admin-form__address #PLZ {
+    float: left;
+    margin-right: 25px;
+    width: 98px; }
+  .admin-form__address #Ort {
+    width: 98px;
+    margin-left: 10px; }
+    .admin-form__address #Ort + label {
+      float: left; }
+  .admin-form__address input[type='checkbox'], .admin-form__address input[type='radio'] {
+    display: none;
+    cursor: pointer; }
+  .admin-form__address input[type='checkbox']:focus,
+  .admin-form__address input[type='radio']:focus,
+  .admin-form__address input[type='checkbox']:active,
+  .admin-form__address input[type='radio']:active {
+    outline: none; }
+  .admin-form__address .checkbox {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 8px;
+    margin-right: 13px; }
+  .admin-form__address .checkbox:before,
+  .admin-form__address .checkbox:after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    left: 0;
+    top: -4px;
+    text-align: center;
+    position: absolute; }
+  .admin-form__address .checkbox:before {
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px; }
+  .admin-form__address input[type='checkbox']:checked + label:before,
+  .admin-form__address input[type='radio']:checked + label:before {
+    border: 1px solid #E4E4E4; }
+  .admin-form__address input[type='checkbox']:checked + label:after,
+  .admin-form__address input[type='radio']:checked + label:after {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    background: url("../images/icon-ok-blue.png") center no-repeat; }
+  .admin-form__address .checkbox:hover:after {
+    color: #c7c7c7; }
+  .admin-form__address .checkbox:after,
+  .admin-form__address .checkbox:hover:after {
+    color: #10acdc; }
+  .admin-form__address #subscribe + label,
+  .admin-form__address #AGB + label {
+    margin-right: 0;
+    padding-left: 40px; }
+  .admin-form__address #subscribe + label,
+  .admin-form__address #AGB + label, .admin-form__address #AGB + label span {
+    line-height: 17px; }
+
+.single-radio .checkbox {
+  font-size: 12px;
+  color: #727272;
+  padding-left: 45px !important; }
+  .single-radio .checkbox span {
+    font-family: "Roboto-Bold", sans-serif; }
+
+.single-radio .checkbox:before, .single-radio .checkbox:after {
+  top: 2px !important; }
+
+.single-radio input[type='checkbox']:checked + label:after,
+.single-radio input[type='radio']:checked + label:after {
+  top: 2px !important; }
+
+.form__submit button {
+  text-transform: uppercase; }
+
+.form__submit button[type="button"] i {
+  margin-right: 10px;
+  width: 15px; }
+
+.form__submit button.best i {
+  margin-right: 5px; }
+
+.form__submit .btn-wrap {
+  width: 50%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #E4E4E4; }
+
+.form__submit .btn-wrap:last-child {
+  border-right: 0; }
+
+.checkbox.address {
+  width: 100%; }
+  .checkbox.address:before, .checkbox.address:after {
+    top: 17px; }
+
+input[type='checkbox']:checked + .checkbox.address:after,
+input[type='radio']:checked + .checkbox.address:after {
+  top: 17px; }
+
+.label__body {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  padding: 10px; }
+  .label__body .info {
+    float: left; }
+  .label__body p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0 !important; }
+  .label__body b {
+    font-family: "Roboto-Bold", sans-serif; }
+  .label__body .action {
+    float: right;
+    overflow: hidden; }
+    .label__body .action a {
+      display: block;
+      overflow: hidden;
+      float: left;
+      margin-top: 3px; }
+    .label__body .action i {
+      background-size: auto; }
+    .label__body .action .edit {
+      position: absolute;
+      right: 60px; }
+    .label__body .action .delete {
+      position: absolute;
+      right: 10px; }
 
 @media screen and (max-width: 1280px) {
   table tr td:nth-child(2),
