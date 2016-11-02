@@ -771,6 +771,8 @@ body
 	tr:nth-child(2n)
 		background:	$grey
 
+.products-compare .img-box
+	padding-top: 6px
 
 .filter
 	&__block
@@ -846,5 +848,188 @@ body
 	.checkbox:hover:after  
 		color: #10acdc  
 	 
+
+
+.admin-form
+	margin-top: -15px
+	form + a
+		color: $dark-grey
+		font-size: 15px
+		line-height: 25px
+		margin: 18px 20px 65px
+		display: inline-block
+		&:hover
+			text-decoration: underline
+		i
+			float: left
+			margin-right: 10px
+	input, select
+		border-radius: 5px
+		border: 1px solid $grey
+		margin-bottom: 15px
+		padding: 3px 10px
+		text-overflow: ellipsis
+		width: 275px
+
+	.tr .td
+		font-family: $r-regular
+		color: $dark-grey
+
+	.tr .td:first-child
+		width: 30%
+
+	.form__body
+		+gradient(#FBFBFB, #B2B4B7)
+		padding: 30px 30px 30px 20px
+
+	.form__submit
+		overflow: hidden
+		background: $blue
+		text-align: center
+		padding: 10px 0
+
+		button
+			background: transparent
+			border: none
+			color: #fff
+			font-size: 24px
+			line-height: 35px
+		i
+			margin-right: 17px
+			width: 35px
+			height: 35px
+			-webkit-background-size: 100%
+			background-size: 100%
+			float: left
+
+	.admin-form__register
+		margin-bottom: 25px
+
+		.tr .td:first-child
+			width: 155px
+
+		input, select
+			width: 265px
+
+		label span
+			color: $blue
+			line-height: 30px
+
+		input.error
+			background: #FFCCCC
+		
+		#PLZ
+			float: left
+			margin-right: 25px
+			width: 98px
+
+		#Ort
+			width: 98px
+			margin-left: 10px
+			& + label
+				float: left
+				
+		.toggle
+			opacity: 0 
+			max-height: 0 
+			overflow: hidden 
+			-moz-transition: opacity .3s, max-height .3s 
+			-ms-transition: opacity .3s, max-height .3s 
+			transition: opacity .3s, max-height .3s 
+			display: none
+
+		.expanded
+			max-height: 100px
+			opacity: 1
+			display: block
+
+		input[type='checkbox'],input[type='radio']
+			display: none
+			cursor: pointer
+
+		input[type='checkbox']:focus,
+		input[type='radio']:focus,
+		input[type='checkbox']:active,
+		input[type='radio']:active
+			outline: none
+
+		.checkbox
+			cursor: pointer
+			display: inline-block
+			position: relative
+			padding-left: 35px
+			padding-bottom: 8px
+			margin-right: 13px
+
+		.checkbox:before,
+		.checkbox:after
+			content: ''
+			display: inline-block
+			width: 28px
+			height: 28px
+			left: 0
+			top: -4px
+			text-align: center
+			position: absolute
+
+		.checkbox:before
+			background-color: #fff
+			transition: all .3s ease-in-out
+			border: 1px solid $grey
+			border-radius: 5px
+
+		input[type='checkbox']:checked + label:before,
+		input[type='radio']:checked + label:before
+			border: 1px solid $grey
+
+		input[type='checkbox']:checked + label:after,
+		input[type='radio']:checked + label:after
+			position: absolute
+			top: -4px
+			right: 0
+			width: 28px
+			height: 28px
+			background: url("../images/icon-ok-blue.png") center no-repeat
+
+		.checkbox:hover:after
+			color: #c7c7c7
+
+
+		.checkbox:after,
+		.checkbox:hover:after
+			color: #10acdc
+
+		#subscribe + label,
+		#AGB + label
+			margin-right: 0
+			padding-left: 40px
+
+		#subscribe + label,
+		#AGB + label,	#AGB + label span
+			line-height: 17px
+
+
+
+
+.trust
+	.tr
+		display: block
+		margin-bottom: 18px
+		.td:first-child
+			color: $dark-grey
+			font-family: $r-regular
+			text-align: center
+			width: 33%
+	.td
+		padding-top: 10px
+		vertical-align: middle
+	.td p
+		padding-left: 10px
+		font-size: 15px
+		font-family: $r-regular
+		color: $dark-grey
+
+
+
 
 @import "media"

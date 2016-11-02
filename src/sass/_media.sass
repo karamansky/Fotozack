@@ -77,6 +77,24 @@
 		padding: 10px 25px
 		font-size: 14px
 
+	.admin-form input, .admin-form select,
+	.admin-form .admin-form__register input, .admin-form .admin-form__register select
+		width: 200px
+
+	.admin-form .form__body
+		padding: 30px 5px 30px 10px
+
+	.admin-form .admin-form__register .tr .td:first-child
+		width: 120px
+
+	.admin-form .admin-form__register #PLZ,
+	.admin-form .admin-form__register #Ort
+		float: none
+		margin-right: 0
+		width: 200px
+
+	.admin-form .admin-form__register #Ort
+		margin-left: 0
 
 @media screen and (max-width: $phone) //768
 	.navbar-default .navbar-toggle
@@ -151,6 +169,12 @@
 		word-break: normal
 		line-break: normal
 
+	.admin-form .admin-form__register #PLZ
+		margin-right: 15px
+
+	.admin-form .admin-form__register #Ort
+		margin-left: 15px
+
 
 @media screen and (max-width: 600px)
 	.footer .footer__menu-soc
@@ -189,6 +213,13 @@
 
 	.slides-wrap .slides_container
 		height: 400px !important
+
+	.admin-form .admin-form__register #PLZ
+		margin-right: 0px
+
+	.admin-form .admin-form__register #Ort
+		margin-left: 0px
+
 
 
 @media screen and (max-width: 325px) //iPhone5
