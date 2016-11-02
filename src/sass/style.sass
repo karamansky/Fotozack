@@ -1212,7 +1212,7 @@ body
 		display: inline-block
 		position: relative
 		padding-left: 35px
-		padding-bottom: 8px
+		//padding-bottom: 8px
 		margin-right: 13px
 
 	.checkbox:before,
@@ -1300,20 +1300,19 @@ body
 .checkbox.address
 	width: 100%
 	&:before, &:after
-		top: 17px
+		top: 20px
 
 input[type='checkbox']:checked + .checkbox.address:after,
 input[type='radio']:checked + .checkbox.address:after
-	top: 17px
+	top: 20px
 
 .label__body
 	position: relative
 	overflow: hidden
 	background: #fff
 	border: 1px solid $footer-grey
-	padding: 10px
+	padding: 12px 10px
 	.info
-		//display: inline-block
 		float: left
 	p
 		font-size: 15px
@@ -1339,5 +1338,10 @@ input[type='radio']:checked + .checkbox.address:after
 		.delete
 			position: absolute
 			right: 10px
+
+.admin-menu-form label
+	margin-bottom: 0
+	margin-top: 0
+
 
 @import "media"

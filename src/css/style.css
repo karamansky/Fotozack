@@ -2383,7 +2383,8 @@ li {
 .icon-gear--small {
   width: 30px;
   height: 30px;
-  background: url("../images/icon-gear.png") center no-repeat; }
+  background: url("../images/icon-gear.png") center no-repeat;
+  background-size: 100%; }
 
 .icon-list {
   width: 30px;
@@ -3620,7 +3621,6 @@ body {
     display: inline-block;
     position: relative;
     padding-left: 35px;
-    padding-bottom: 8px;
     margin-right: 13px; }
   .admin-form__address .checkbox:before,
   .admin-form__address .checkbox:after {
@@ -3698,18 +3698,18 @@ body {
 .checkbox.address {
   width: 100%; }
   .checkbox.address:before, .checkbox.address:after {
-    top: 17px; }
+    top: 20px; }
 
 input[type='checkbox']:checked + .checkbox.address:after,
 input[type='radio']:checked + .checkbox.address:after {
-  top: 17px; }
+  top: 20px; }
 
 .label__body {
   position: relative;
   overflow: hidden;
   background: #fff;
   border: 1px solid #CCCCCC;
-  padding: 10px; }
+  padding: 12px 10px; }
   .label__body .info {
     float: left; }
   .label__body p {
@@ -3734,6 +3734,10 @@ input[type='radio']:checked + .checkbox.address:after {
     .label__body .action .delete {
       position: absolute;
       right: 10px; }
+
+.admin-menu-form label {
+  margin-bottom: 0;
+  margin-top: 0; }
 
 @media screen and (max-width: 1280px) {
   table tr td:nth-child(2),
@@ -3806,7 +3810,9 @@ input[type='radio']:checked + .checkbox.address:after {
     margin-right: 0;
     width: 200px; }
   .admin-form .admin-form__register #Ort {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .label__body .info {
+    width: 67%; } }
 
 @media screen and (max-width: 768px) {
   .navbar-default .navbar-toggle {
@@ -3901,7 +3907,9 @@ input[type='radio']:checked + .checkbox.address:after {
   .admin-form .admin-form__register #Ort {
     margin-left: 0px; }
   .admin-form {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .admin-form__address .form__submit button {
+    font-size: 16px; } }
 
 @media screen and (max-width: 325px) {
   .nav {
