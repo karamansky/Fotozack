@@ -121,213 +121,169 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container no-padding">
   <div class="row">
-    <div class="inform-black">
-      <div class="inform">
-        <div class="inform__list">
-          <p>Ihr Vergleich</p>
-        </div><!-- inform__list -->
-      </div><!-- inform -->
-    </div><!-- inform-black -->
+
+    <div class="col-sm-6">
+      <div class="inform-black">
+        <div class="inform">
+          <div class="inform__list">
+            <p>Ich bin bereits Fotozack-Kunde</p>
+          </div><!-- inform__list -->
+        </div><!-- inform -->
+      </div><!-- inform-black -->
+
+      <div class="admin-form">
+        <div class="admin-form__signin">
+          <form class="form" action="/">
+            <div class="form__body">
+              <div class="tr">
+                <div class="td"><label for="email">e-Mail</label></div>
+                <div class="td"><input id="email" type="email" placeholder="" required="required" name="email"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="pass">Password</label></div>
+                <div class="td"><input id="pass" type="password" placeholder="" required="required" name="pass"/></div>
+              </div>
+            </div><!-- form__body -->
+            <div class="form__submit">
+              <button type="submit" name="signin"><i class="icon icon-unlock"></i>ANMELDEN</button>
+            </div><!-- form__submit -->
+          </form>
+          <a href="#"><i class="icon icon-lock-grey"></i> Passwort vergessen?</a>
+        </div><!-- admin-form__signup -->
+      </div><!-- admin-form -->
+
+      <div class="inform-black">
+        <div class="inform">
+          <div class="inform__list">
+            <p>Vertrauen ist gut, Kontrolle ist besser!</p>
+          </div><!-- inform__list -->
+        </div><!-- inform -->
+      </div><!-- inform-black -->
+
+      <div class="trust">
+        <div class="tr">
+          <div class="td"><img src="images/trust1.png" alt=""></div>
+          <div class="td"><p>Um Ihnen alle rechte zu gewähren die Ihnen auch zustehen, setzen wir auf
+            Händerrbund Geprüfte AGBs</p></div>
+        </div>
+        <div class="tr">
+          <div class="td"><img src="images/trust2.png" alt=""></div>
+          <div class="td"><p>Um Ihnen alle rechte zu gewähren die Ihnen auch zustehen, setzen wir auf
+            Händerrbund Geprüfte AGBs</p></div>
+        </div>
+      </div><!-- trust -->
+
+    </div>
+
+    <div class="col-sm-6">
+      <div class="inform-black">
+        <div class="inform">
+          <div class="inform__list">
+            <p>Ich bin Neukunde</p>
+          </div><!-- inform__list -->
+        </div><!-- inform -->
+      </div><!-- inform-black -->
+
+      <div class="admin-form">
+        <div class="admin-form__register">
+          <form class="form" action="/">
+            <div class="form__body">
+              <div class="tr">
+                <div class="td"><label>Anrede</label></div>
+                <div class="td">
+                  <input id="Herr" type="radio" required="required" name="sex"/>
+                  <label class="checkbox" for="Herr">Herr</label>
+                  <input id="Frau" type="radio" required="required" name="sex"/>
+                  <label class="checkbox" for="Frau">Frau</label>
+                  <input id="Firma" type="checkbox" required="required" name="Firma"/>
+                  <label class="checkbox" for="Firma">Firma</label>
+                </div>
+              </div>
+              <div id="firmInput" class="toggle">
+                <div class="tr">
+                  <div class="td"><label for="Firmenname">Firmenname</label></div>
+                  <div class="td"><input id="Firmenname" type="text" name="Firmenname"/></div>
+                </div>
+                <div class="tr">
+                  <div class="td"><label for="UstIdNr">UstIdNr.</label></div>
+                  <div class="td"><input id="UstIdNr" type="text" name="UstIdNr."/></div>
+                </div>
+              </div><!-- firma-input -->
+              <div class="tr">
+                <div class="td"><label for="Vorname">Vorname <span>*</span></label></div>
+                <div class="td"><input class="error" id="Vorname" type="text" required="required" name="Vorname"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="Nachnahme">Nachnahme <span>*</span></label></div>
+                <div class="td"><input id="Nachnahme" type="text" placeholder="" required="required" name="Nachnahme"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="e-Mail">e-Mail <span>*</span></label></div>
+                <div class="td"><input id="e-Mail" type="text" required="required" name="e-Mail"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="Adresse">Adresse <span>*</span></label></div>
+                <div class="td"><input id="Adresse" type="text" required="required" name="Adresse"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="PLZ">PLZ <span>*</span></label></div>
+                <div class="td"><input id="PLZ" type="text" placeholder="" required="required" name="PLZ"/>
+                <label for="Ort">Ort <span>*</span></label><input id="Ort" type="text" placeholder="" required="required" name="Ort"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="Land">Land <span>*</span></label></div>
+                <div class="td">
+                  <select id="Land" placeholder="Deutschland" required="required" name="Land">
+                    <option value="Deutschland">Deutschland</option>
+                    <option value="Italien">Italien</option>
+                    <option value="England">England</option>
+                    <option value="Russland">Russland</option>
+                  </select>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="Telefon">Telefon <span>*</span></label></div>
+                <div class="td"><input id="Telefon" type="text" placeholder="" required="required" name="Telefon"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="Passwort">Passwort <span>*</span></label></div>
+                <div class="td"><input id="Passwort" type="text" placeholder="" required="required" name="Passwort"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"><label for="Bestätigen">Passwort Bestätigen <span>*</span></label></div>
+                <div class="td"><input id="Bestätigen" type="text" placeholder="" required="required" name="Bestätigen"/></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td">
+                  <input id="AGB" type="checkbox" name="AGB"/>
+                  <label class="checkbox" for="AGB">Ja, ich stimme den <span>AGB</span> und den <span>Datenschutzbestimmungen</span> von Fotozack.de zu.*</label>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td">
+                  <input id="subscribe" type="checkbox" checked="checked" name="subscribe"/>
+                  <label class="checkbox" for="subscribe">
+                    Ja, informieren Sie mich über die neue Produkte, Rabattaktionen und Gutscheine per E-Mail. Ich kann mich jederzeit abmelden.
+                  </label>
+                </div>
+              </div>
+            </div><!-- form__body -->
+            <div class="form__submit">
+              <button type="submit" name="register"><i class="icon icon-arrow-exit"></i>REGISTRIEREN</button>
+            </div><!-- form__submit -->
+          </form>
+        </div><!-- admin-form__register -->
+      </div><!-- admin-form -->
+
+    </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="product compare">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="compare__img">
-          <img src="images/compare-img.png" alt="">
-        </div><!-- compare__img -->
-      </div><!-- col-4 -->
-      <div class="col-sm-4">
-        <div class="product__item">
-          <div class="head">
-            <h2><a href="#">Canon</a></h2>
-            <h5>EF 70-200mm 2,8L IS II USM</h5>
-          </div><!-- head -->
-          <div class="img-box">
-            <img src="images/products/canon.png" alt="">
-          </div><!-- img-box -->
-          <div class="price-box">
-            <div class="price">
-              <p><span>2.137,00</span>€</p>
-            </div><!-- price -->
-            <div class="description">
-              <p>inkl. 19% MwSt.</p>
-              <p>zzgl. <a href="#">Versand</a></p>
-            </div><!-- description -->
-          </div><!-- price-box -->
-        </div><!-- product__item -->
-      </div><!-- col-4 -->
-      <div class="col-sm-4">
-        <div class="product__item">
-          <div class="head">
-            <h2><a href="#">Canon</a></h2>
-            <h5>EF 70-200mm 2,8L IS II USM</h5>
-          </div><!-- head -->
-          <div class="img-box">
-            <img src="images/products/canon2.png" alt="">
-          </div><!-- img-box -->
-          <div class="price-box">
-            <div class="price">
-              <p><span>60,00</span>€</p>
-            </div><!-- price -->
-            <div class="description">
-              <p>inkl. 19% MwSt.</p>
-              <p>zzgl. <a href="#">Versand</a></p>
-            </div><!-- description -->
-          </div><!-- price-box -->
-        </div><!-- product__item -->
-      </div><!-- col-4 -->
-    </div><!-- row -->
-  </div><!-- products -->
-</div>
 
-<div class="container">
-  <div class="compare-table">
-    <div class="row">
-      <table>
-        <tr>
-          <td>Bajonettanschlüsse</td>
-          <td>Canon EF</td>
-          <td>Canon EF</td>
-        </tr>
-        <tr>
-          <td>Brennweite</td>
-          <td>70 - 200 mm</td>
-          <td>70 - 200 mm</td>
-        </tr>
-        <tr>
-          <td>Zoomfaktor</td>
-          <td>29°</td>
-          <td>29°</td>
-        </tr>
-        <tr>
-          <td>Bildwinkel horizontal</td>
-          <td>20°</td>
-          <td>20°</td>
-        </tr>
-        <tr>
-          <td>Bildwinkel vertikal</td>
-          <td>nein</td>
-          <td>nein</td>
-        </tr>
-        <tr>
-          <td>Tilt/Shift-Funktion</td>
-          <td>ja</td>
-          <td>ja</td>
-        </tr>
-        <tr>
-          <td>Vollformat-geeignet</td>
-          <td>2,8</td>
-          <td>2,8</td>
-        </tr>
-        <tr>
-          <td>Lichtstärke</td>
-          <td>32</td>
-          <td>32</td>
-        </tr>
-        <tr>
-          <td>Kleinste Blendenöffnung</td>
-          <td>120 cm</td>
-          <td>120 cm</td>
-        </tr>
-        <tr>
-          <td>Naheinstellgrenze</td>
-          <td>1 : 4,76</td>
-          <td>1 : 4,76</td>
-        </tr>
-        <tr>
-          <td>Abbildungsmaßstab</td>
-          <td>ja</td>
-          <td>ja</td>
-        </tr>
-        <tr>
-          <td>Bildstabilisator</td>
-          <td>8</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>Anzahl Blendenlamellen</td>
-          <td>ja</td>
-          <td>ja</td>
-        </tr>
-        <tr>
-          <td>Autofokus</td>
-          <td>ja</td>
-          <td>ja</td>
-        </tr>
-        <tr>
-          <td>Ultraschallmotor</td>
-          <td>ja</td>
-          <td>ja</td>
-        </tr>
-        <tr>
-          <td>Anzahl Linsen</td>
-          <td>23</td>
-          <td>23</td>
-        </tr>
-        <tr>
-          <td>Anzahl Gruppen</td>
-          <td>19</td>
-          <td>19</td>
-        </tr>
-        <tr>
-          <td>Asphärische Linse(n)</td>
-          <td>k. A.</td>
-          <td>k. A.</td>
-        </tr>
-        <tr>
-          <td>ED-Linse(n)</td>
-          <td>k. A.</td>
-          <td>k. A.</td>
-        </tr>
-        <tr>
-          <td>Apochromat</td>
-          <td>nein</td>
-          <td>nein</td>
-        </tr>
-        <tr>
-          <td>Gewicht</td>
-          <td>1.490 g</td>
-          <td>1.490 g</td>
-        </tr>
-        <tr>
-          <td>Länge</td>
-          <td>199 mm</td>
-          <td>199 mm</td>
-        </tr>
-        <tr>
-          <td>Durchmesser</td>
-          <td>89 mm</td>
-          <td>89 mm</td>
-        </tr>
-        <tr>
-          <td>Filtergewinde</td>
-          <td>77 mm</td>
-          <td>77 mm</td>
-        </tr>
-        <tr>
-          <td>Stativschelle</td>
-          <td>ja</td>
-          <td>ja</td>
-        </tr>
-        <tr>
-          <td>Staub-/Spritzwasserschutz</td>
-          <td>nein</td>
-          <td>nein</td>
-        </tr>
-        <tr>
-          <td>Staub-/Spritzwasserschutz</td>
-          <td>nein</td>
-          <td>nein</td>
-        </tr>
-      </table>
-    </div>
-  </div><!-- compare-table -->
-</div>
 
 <footer class="footer">
   <div class="container-fluid no-padding">

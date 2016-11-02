@@ -310,29 +310,28 @@ body
 		padding-top: 12px
 		float: left
 
-	.pager
-		float: right
-		padding-top: 10px
-		//width: 155px
-		ul
-			text-align: right
-			overflow: hidden
-		li
-			float: left
-			width: 23px
-			height: 23px
-			text-align: center
+.pager
+	float: right
+	padding-top: 10px
+	ul
+		text-align: right
+		overflow: hidden
+	li
+		float: left
+		width: 23px
+		height: 23px
+		text-align: center
 
-		li:hover, li.active
-			border: 1px solid #fff
-			border-radius: 50%
-			cursor: pointer
+	li:hover, li.active
+		border: 1px solid #fff
+		border-radius: 50%
+		cursor: pointer
 
-		li.arr:hover
-			border: none
+	li.arr:hover
+		border: none
 
-		a
-			display: inline-block
+	a
+		display: inline-block
 
 .footer
 	.footer__head
@@ -1008,9 +1007,6 @@ body
 		#AGB + label,	#AGB + label span
 			line-height: 17px
 
-
-
-
 .trust
 	.tr
 		display: block
@@ -1028,6 +1024,112 @@ body
 		font-size: 15px
 		font-family: $r-regular
 		color: $dark-grey
+
+/*********** admin page **************/
+.account-menu-wrap, .orders-wrap
+	+gradient(#F5F5F5,#B1B3B6)
+	padding-bottom: 17px
+	margin-bottom: 70px
+	h4
+		font-family: $r-regular
+	p
+		padding: 19px 10px 0 10px
+
+.inform-admin
+	margin: 10px 0 0 0!important
+
+.account-menu
+	padding: 10px
+	background: $blue
+	&__head h5
+		color: #fff
+		margin-bottom: 13px
+
+	&__item
+		margin-bottom: 20px
+		margin-left: 30px
+		a
+			display: block
+			text-transform: uppercase
+			line-height: 31px
+			&:hover
+				font-family: $r-bold
+		i
+			float: left
+			margin-right: 15px
+
+.orders
+	padding-left: 10px
+	padding-right: 10px
+	table
+		width: 100%
+		border-spacing: 10px 0
+
+	th
+		font-family: $r-bold
+		font-size: 15px
+		padding: 10px 0 5px 0
+	tbody
+
+		tr
+			background: #fff
+			border: 1px solid $footer-grey
+
+			td
+				padding: 18px 11px
+				color: $dark-grey
+			b
+				font-family: $r-bold
+
+.orders-wrap
+	.orders__bottom
+		overflow: hidden
+		padding-top: 25px
+
+	.order__statistics
+		float: left
+		p
+			padding: 0
+			color: $dark-grey
+		span
+			font-family: $r-bold
+
+	.pager
+		overflow: hidden
+		padding-top: 0
+		p
+			float: left
+			padding: 0 5px 0 0
+			color: $dark-grey
+		ul
+			overflow: hidden
+			li
+				float: left
+				margin-right: 5px
+				width: auto
+				&:hover
+					border: none
+					font-family: $r-bold
+			.active
+				font-family: $r-bold
+				border: none
+			a
+				color: $dark-grey
+				font-size: 14px
+
+			li:last-child
+				margin-right: 0
+
+
+
+
+
+
+
+
+
+
+
 
 
 

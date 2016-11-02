@@ -112,8 +112,10 @@ $(function(){
 			$("#slides .next").trigger("click");
 		});
 
-
-
+/*add inputs when firma is checked*/
+		$("#Firma + label").on("click", function (){
+			$("#firmInput").toggleClass("expanded");
+		});
 
 
 
