@@ -170,87 +170,45 @@
       <div class="inform-black">
         <div class="inform inform-admin">
           <div class="inform__list">
-            <p>Meine Bestellungen</p>
+            <p>Adressbuch</p>
           </div><!-- inform__list -->
         </div><!-- inform -->
       </div><!-- inform-black -->
 
-      <div class="orders-wrap">
-        <div class="orders">
-          <table >
-            <thead>
-              <tr class="tr">
-                <th>Datum</th>
-                <th>Status</th>
-                <th>Betrag</th>
-                <th>Info</th>
-              </tr>
-            </thead>
-            <tbody >
-            <tr>
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            <tr>
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            <tr>
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            <tr >
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            <tr>
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            <tr>
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            <tr>
-              <td>12.02.14</td>
-              <td>Bestellung: <b>401668</b> | Versendet</td>
-              <td><span>1.995,97</span> €</td>
-              <td><a href="#"><i class="icon icon-info-blue"></i></a></td>
-            </tr>
-            </tbody>
-          </table>
-          <div class="orders__bottom">
-            <div class="order__statistics">
-              <p>Seite <span>3</span> von <span>18</span> (isngesamt <span>55</span> Bestellungen)</p>
-            </div>
-            <div class="pager">
-              <p>Seite:</p>
-              <ul>
-                <li class="arr"><a href="#"><i class="icon icon-triple-arrow-left"></i></a></li>
-                <li class=""><a href="#">1</a></li>
-                <li class=""><a href="#">2</a></li>
-                <li class="active"><a href="#">3</a></li>
-                <li class=""><a href="#">4</a></li>
-                <li class=""><a href="#">...</a></li>
-                <li class=""><a href="#">18</a></li>
-                <li class="arr"><a href="#"><i class="icon icon-triple-arrow-right"></i></a></li>
-              </ul>
-            </div><!-- pager -->
-          </div><!-- orders__bottom -->
-        </div><!-- orders -->
-      </div><!-- orders-wrap -->
+      <div class="admin-menu-form">
+        <div class="admin-form__address">
+          <form class="form" action="/">
+            <div class="form__body">
+              <h4>Newsletter</h4>
+              <p>
+                Sie möchten unseren Informationsnewsletter Bestellen bzw. Abbestellen? Gebens Sie Ihre e-Mail adresse ein, wir erledigen den rest.
+              </p>
+              <div class="margin-b-250">
+                <div class="tr">
+                  <div class="td"><label for="e-Mail">e-Mail <span>*</span></label></div>
+                  <div class="td"><input class="e-Mail" id="e-Mail" type="email" required="required" name="e-Mail"/></div>
+                </div>
+              </div>
+              <div class="single-radio">
+                <input id="ftz" type="radio" name="ftz" checked="checked"/>
+                <label class="checkbox" for="ftz">
+                  Ja, ich stimme den <span>Datenschutzbestimmungen</span> von Fotozack.de zu.
+                </label>
+              </div>
+
+            </div><!-- form__body -->
+            <div class="form__submit">
+              <div class="btn-wrap">
+                <button type="button" name="register"><i class="icon icon-arrow-left"></i>ZURÜCK</button>
+              </div>
+              <div class="btn-wrap">
+                <button class="best" type="submit" name="bestatigen"><i class="icon icon-ok"></i>Bestätigen</button>
+              </div>
+            </div><!-- form__submit -->
+          </form>
+        </div><!-- admin-form__register -->
+      </div><!-- admin-form -->
+
     </div>
   </div>
 </div>

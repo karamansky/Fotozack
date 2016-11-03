@@ -894,7 +894,7 @@ body
 			line-height: 35px
 		i
 			margin-right: 17px
-			width: 35px
+			width: 27px
 			height: 35px
 			-webkit-background-size: 100%
 			background-size: 100%
@@ -1063,7 +1063,6 @@ body
 	padding-right: 10px
 	table
 		width: 100%
-		border-spacing: 10px 0
 
 	th
 		font-family: $r-bold
@@ -1134,7 +1133,8 @@ body
 		i
 			float: left
 			margin-right: 10px
-	input, select
+
+	input, select, textarea
 		border-radius: 5px
 		border: 1px solid $grey
 		margin-bottom: 20px
@@ -1146,12 +1146,16 @@ body
 		+gradient(#FBFBFB, #C6C7C9)
 		padding: 3px 20px 30px 20px
 		h4
-			margin-bottom: 18px
+			margin-bottom: 17px
 			font-family: $r-regular
 			color: $dark-grey
 		p
 			color: $dark-grey
-			margin-bottom: 13px
+			margin-bottom: 20px
+
+		.form__submit
+			margin-right: -20px
+			margin-left: -20px
 
 	.form__submit
 		overflow: hidden
@@ -1167,7 +1171,7 @@ body
 			line-height: 35px
 		i
 			margin-right: 17px
-			width: 35px
+			width: 27px
 			height: 35px
 			-webkit-background-size: 100%
 			background-size: 100%
@@ -1175,8 +1179,10 @@ body
 
 	.tr .td:first-child
 		width: 155px
+		font-family: $r-regular
+		color: $dark-grey
 
-	input, select
+	input, select, textarea
 		width: 265px
 
 	label span
@@ -1212,7 +1218,6 @@ body
 		display: inline-block
 		position: relative
 		padding-left: 35px
-		//padding-bottom: 8px
 		margin-right: 13px
 
 	.checkbox:before,
@@ -1318,6 +1323,7 @@ input[type='radio']:checked + .checkbox.address:after
 		font-size: 15px
 		line-height: 20px
 		margin-bottom: 0!important
+		overflow: hidden
 	b
 		font-family: $r-bold
 
@@ -1343,5 +1349,103 @@ input[type='radio']:checked + .checkbox.address:after
 	margin-bottom: 0
 	margin-top: 0
 
+.form__body
+	overflow: hidden
 
+.order-info
+	overflow: hidden
+
+	&__address
+		font-size: 14px
+		margin-bottom: 15px
+		overflow: hidden
+		color: $dark-grey
+		.address__item--left
+			float: left
+		.address__item--right
+			float: right
+
+	&__date
+		font-size: 14px
+		margin-bottom: 20px
+
+	&__goods
+		font-size: 14px
+		border-bottom: 2px solid $blue
+		margin-right: -20px
+		margin-left: -20px
+
+		&>p
+			padding: 0 20px 0 20px
+			margin-bottom: 10px!important
+
+		table
+			width: 100%
+			color: $dark-grey
+			tr
+				th
+					background: $blue!important
+					font-family: $r-regular
+					font-size: 14px
+					padding: 3px 0 0 20px
+					color: #fff!important
+			tr
+				td
+					padding: 3px 0 0 20px
+
+		p
+			margin-bottom: 5px
+
+	&__total
+		font-size: 14px
+		float: right
+		margin-top: 20px
+		margin-right: -40px
+		width: 70%
+
+		.tr
+			display: block
+			.td
+				font-size: 14px
+				color: $dark-grey
+				&:first-child
+					width: 180px
+				&:last-child
+					text-align: right
+					width: 80px
+		.red .td
+			color: red!important
+		.total-sum
+			padding: 7px 0
+			.td
+				font-family: $r-bold!important
+
+
+	&__status
+		font-size: 14px
+		margin: 30px -20px 30px -20px
+
+		&>p
+			margin-bottom: 10px!important
+			padding: 0 20px 0 20px
+
+		table
+			width: 100%
+			color: $dark-grey
+			tr
+				th
+					background: $blue!important
+					font-family: $r-regular
+					font-size: 14px
+					color: #fff!important
+					padding: 3px 0 0 20px
+					&:last-child
+						text-align: right
+						padding-right: 20px
+			tr
+				td
+					padding: 3px 0 0 20px
+					&:last-child
+						text-align: right
+						padding-right: 20px
 @import "media"

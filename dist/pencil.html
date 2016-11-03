@@ -128,60 +128,49 @@
       <div class="inform-black">
         <div class="inform inform-admin">
           <div class="inform__list">
-            <p>Ich bin bereits Fotozack-Kunde</p>
+            <p>Mein Fotozack.de Account</p>
           </div><!-- inform__list -->
         </div><!-- inform -->
       </div><!-- inform-black -->
 
-      <div class="admin-form">
-        <div class="admin-form__signin">
-          <form class="form" action="/">
-            <div class="form__body">
-              <div class="tr">
-                <div class="td"><label for="email">e-Mail</label></div>
-                <div class="td"><input id="email" type="email" placeholder="" required="required" name="email"/></div>
-              </div>
-              <div class="tr">
-                <div class="td"><label for="pass">Password</label></div>
-                <div class="td"><input id="pass" type="password" placeholder="" required="required" name="pass"/></div>
-              </div>
-            </div><!-- form__body -->
-            <div class="form__submit">
-              <button type="submit" name="signin"><i class="icon icon-unlock"></i>ANMELDEN</button>
-            </div><!-- form__submit -->
-          </form>
-          <a href="#"><i class="icon icon-lock-grey"></i> Passwort vergessen?</a>
-        </div><!-- admin-form__signup -->
-      </div><!-- admin-form -->
-
-      <div class="inform-black">
-        <div class="inform">
-          <div class="inform__list">
-            <p>Vertrauen ist gut, Kontrolle ist besser!</p>
-          </div><!-- inform__list -->
-        </div><!-- inform -->
-      </div><!-- inform-black -->
-
-      <div class="trust">
-        <div class="tr">
-          <div class="td"><img src="images/trust1.png" alt=""></div>
-          <div class="td"><p>Um Ihnen alle rechte zu gewähren die Ihnen auch zustehen, setzen wir auf
-            Händerrbund Geprüfte AGBs</p></div>
-        </div>
-        <div class="tr">
-          <div class="td"><img src="images/trust2.png" alt=""></div>
-          <div class="td"><p>Um Ihnen alle rechte zu gewähren die Ihnen auch zustehen, setzen wir auf
-            Händerrbund Geprüfte AGBs</p></div>
-        </div>
-      </div><!-- trust -->
-
+      <div class="account-menu-wrap">
+        <h4>Herzlich Wilkommen!</h4>
+        <div class="account-menu">
+          <div class="account-menu__head">
+            <h5>IHRE PERSÖNLICHEN EINSTELLUNGEN</h5>
+          </div><!-- _head -->
+          <div class="account-menu__item">
+            <a href="#"><i class="icon icon-gear--small"></i>Administration</a>
+          </div><!-- _item -->
+          <div class="account-menu__item">
+            <a href="list.html"><i class="icon icon-list"></i>Meine bestellungen</a>
+          </div><!-- _item -->
+          <div class="account-menu__item">
+            <a href="pencil.html"><i class="icon icon-pencil"></i>Ihre persönliche Daten ändern</a>
+          </div><!-- _item -->
+          <div class="account-menu__item">
+            <a href="book.html"><i class="icon icon-book"></i>Mein persönliches Adressbuch</a>
+          </div><!-- _item -->
+          <div class="account-menu__item">
+            <a href="key.html"><i class="icon icon-key"></i>Passwort ändern</a>
+          </div><!-- _item -->
+          <div class="account-menu__item">
+            <a href="envelope.html"><i class="icon icon-envelope"></i>Newsletter Einstellungen</a>
+          </div><!-- _item -->
+          <div class="account-menu__item">
+            <a href="deslike.html"><i class="icon icon-dislike"></i>Konto löschen</a>
+          </div><!-- _item -->
+        </div><!-- account-menu -->
+        <p>Hier ist Ihre persönliche Seite, auf der Sie einen Überblick über Ihre getätigten Bestellungen sowie eine Auflistung Ihrer zuletzt besuchten Artikel finden.</p>
+        <p>Falls Sie bereits ein Konto bei uns haben, können Sie hier außerdem Ihre persönlichen Daten ändern.</p>
+      </div><!-- account-menu-wrap -->
     </div>
 
     <div class="col-sm-6">
       <div class="inform-black">
         <div class="inform inform-admin">
           <div class="inform__list">
-            <p>Ich bin Neukunde</p>
+            <p>Ihre persönlichen Daten ändern</p>
           </div><!-- inform__list -->
         </div><!-- inform -->
       </div><!-- inform-black -->
@@ -191,7 +180,7 @@
           <form class="form" action="/">
             <div class="form__body">
               <div class="tr">
-                <div class="td"><label>Anrede</label></div>
+                <div class="td"><label>Anrede <span>*</span></label></div>
                 <div class="td">
                   <input id="Herr" type="radio" required="required" name="sex"/>
                   <label class="checkbox" for="Herr">Herr</label>
@@ -224,56 +213,23 @@
                 <div class="td"><input id="e-Mail" type="text" required="required" name="e-Mail"/></div>
               </div>
               <div class="tr">
-                <div class="td"><label for="Adresse">Adresse <span>*</span></label></div>
-                <div class="td"><input id="Adresse" type="text" required="required" name="Adresse"/></div>
-              </div>
-              <div class="tr">
-                <div class="td"><label for="PLZ">PLZ <span>*</span></label></div>
-                <div class="td"><input id="PLZ" type="text" placeholder="" required="required" name="PLZ"/>
-                <label for="Ort">Ort <span>*</span></label><input id="Ort" type="text" placeholder="" required="required" name="Ort"/></div>
-              </div>
-              <div class="tr">
-                <div class="td"><label for="Land">Land <span>*</span></label></div>
-                <div class="td">
-                  <select id="Land" placeholder="Deutschland" required="required" name="Land">
-                    <option value="Deutschland">Deutschland</option>
-                    <option value="Italien">Italien</option>
-                    <option value="England">England</option>
-                    <option value="Russland">Russland</option>
-                  </select>
-                </div>
-              </div>
-              <div class="tr">
                 <div class="td"><label for="Telefon">Telefon <span>*</span></label></div>
                 <div class="td"><input id="Telefon" type="text" placeholder="" required="required" name="Telefon"/></div>
               </div>
-              <div class="tr">
-                <div class="td"><label for="Passwort">Passwort <span>*</span></label></div>
-                <div class="td"><input id="Passwort" type="text" placeholder="" required="required" name="Passwort"/></div>
-              </div>
-              <div class="tr">
-                <div class="td"><label for="Bestätigen">Passwort Bestätigen <span>*</span></label></div>
-                <div class="td"><input id="Bestätigen" type="text" placeholder="" required="required" name="Bestätigen"/></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td">
-                  <input id="AGB" type="checkbox" name="AGB"/>
-                  <label class="checkbox" for="AGB">Ja, ich stimme den <span>AGB</span> und den <span>Datenschutzbestimmungen</span> von Fotozack.de zu.*</label>
-                </div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td">
-                  <input id="subscribe" type="checkbox" checked="checked" name="subscribe"/>
-                  <label class="checkbox" for="subscribe">
-                    Ja, informieren Sie mich über die neue Produkte, Rabattaktionen und Gutscheine per E-Mail. Ich kann mich jederzeit abmelden.
-                  </label>
-                </div>
+              <div class="single-radio">
+                <input id="ftz" type="radio" name="ftz" checked="checked"/>
+                <label class="checkbox" for="ftz">
+                  Ja, ich stimme den <span>Datenschutzbestimmungen</span> von Fotozack.de zu.
+                </label>
               </div>
             </div><!-- form__body -->
             <div class="form__submit">
-              <button type="submit" name="register"><i class="icon icon-arrow-exit"></i>REGISTRIEREN</button>
+              <div class="btn-wrap">
+                <button type="button" name="register"><i class="icon icon-arrow-left"></i>ZURÜCK</button>
+              </div>
+              <div class="btn-wrap">
+                <button class="best" type="submit" name="bestatigen"><i class="icon icon-ok"></i>Bestätigen</button>
+              </div>
             </div><!-- form__submit -->
           </form>
         </div><!-- admin-form__register -->
