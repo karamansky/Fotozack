@@ -3314,144 +3314,161 @@ body {
 .filter .checkbox:hover:after {
   color: #10acdc; }
 
-.admin-form form + a {
-  color: #727272;
-  font-size: 15px;
-  line-height: 25px;
-  margin: 18px 20px 65px;
-  display: inline-block; }
-  .admin-form form + a:hover {
-    text-decoration: underline; }
-  .admin-form form + a i {
-    float: left;
-    margin-right: 10px; }
-
-.admin-form input, .admin-form select {
-  border-radius: 5px;
-  border: 1px solid #E4E4E4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
-  text-overflow: ellipsis;
-  width: 275px; }
-
-.admin-form .tr .td {
-  font-family: "Roboto-Regular", sans-serif;
-  color: #727272; }
-
-.admin-form .tr .td:first-child {
-  width: 30%; }
-
-.admin-form .form__body {
-  background: #FBFBFB;
-  background: -webkit-linear-gradient(top, #FBFBFB 0%, #B2B4B7 60%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), color-stop(60%, #B2B4B7));
-  background: linear-gradient(to bottom, #FBFBFB 0%, #B2B4B7 60%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
-  padding: 30px 30px 30px 20px; }
-
-.admin-form .form__submit {
-  overflow: hidden;
-  background: #0277B4;
-  text-align: center;
-  padding: 10px 0; }
-  .admin-form .form__submit button {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    line-height: 35px; }
-  .admin-form .form__submit i {
-    margin-right: 17px;
-    width: 27px;
-    height: 35px;
-    background-size: 100%;
-    float: left; }
-
-.admin-form .admin-form__register {
-  margin-bottom: 25px; }
-  .admin-form .admin-form__register .tr .td:first-child {
-    width: 155px; }
-  .admin-form .admin-form__register input, .admin-form .admin-form__register select {
-    width: 265px; }
-  .admin-form .admin-form__register label span {
-    color: #0277B4;
-    line-height: 30px; }
-  .admin-form .admin-form__register input.error {
-    background: #FFCCCC; }
-  .admin-form .admin-form__register #PLZ {
-    float: left;
-    margin-right: 25px;
-    width: 98px; }
-  .admin-form .admin-form__register #Ort {
-    width: 98px;
-    margin-left: 10px; }
-    .admin-form .admin-form__register #Ort + label {
-      float: left; }
-  .admin-form .admin-form__register .toggle {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: opacity .3s, max-height .3s;
-    transition: opacity .3s, max-height .3s;
-    display: none; }
-  .admin-form .admin-form__register .expanded {
-    max-height: 100px;
-    opacity: 1;
-    display: block; }
-  .admin-form .admin-form__register input[type='checkbox'], .admin-form .admin-form__register input[type='radio'] {
-    display: none;
-    cursor: pointer; }
-  .admin-form .admin-form__register input[type='checkbox']:focus,
-  .admin-form .admin-form__register input[type='radio']:focus,
-  .admin-form .admin-form__register input[type='checkbox']:active,
-  .admin-form .admin-form__register input[type='radio']:active {
-    outline: none; }
-  .admin-form .admin-form__register .checkbox {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
-    padding-bottom: 8px;
-    margin-right: 13px; }
-  .admin-form .admin-form__register .checkbox:before,
-  .admin-form .admin-form__register .checkbox:after {
-    content: '';
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    left: 0;
-    top: -4px;
-    text-align: center;
-    position: absolute; }
-  .admin-form .admin-form__register .checkbox:before {
-    background-color: #fff;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+.admin-form {
+  /******* end select*******/ }
+  .admin-form form + a {
+    color: #727272;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 18px 20px 65px;
+    display: inline-block; }
+    .admin-form form + a:hover {
+      text-decoration: underline; }
+    .admin-form form + a i {
+      float: left;
+      margin-right: 10px; }
+  .admin-form input {
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+    padding: 3px 10px;
+    text-overflow: ellipsis;
+    width: 275px; }
+  .admin-form select {
+    color: #CCCCCC;
+    background-color: white;
     border: 1px solid #E4E4E4;
-    border-radius: 5px; }
-  .admin-form .admin-form__register input[type='checkbox']:checked + label:before,
-  .admin-form .admin-form__register input[type='radio']:checked + label:before {
-    border: 1px solid #E4E4E4; }
-  .admin-form .admin-form__register input[type='checkbox']:checked + label:after,
-  .admin-form .admin-form__register input[type='radio']:checked + label:after {
-    position: absolute;
-    top: -4px;
-    right: 0;
-    width: 28px;
-    height: 28px;
-    background: url("../images/icon-ok-blue.png") center no-repeat; }
-  .admin-form .admin-form__register .checkbox:hover:after {
-    color: #c7c7c7; }
-  .admin-form .admin-form__register .checkbox:after,
-  .admin-form .admin-form__register .checkbox:hover:after {
-    color: #10acdc; }
-  .admin-form .admin-form__register #subscribe + label,
-  .admin-form .admin-form__register #AGB + label {
-    margin-right: 0;
-    padding-left: 40px; }
-  .admin-form .admin-form__register #subscribe + label,
-  .admin-form .admin-form__register #AGB + label, .admin-form .admin-form__register #AGB + label span {
-    line-height: 17px; }
+    border-radius: 5px;
+    display: inline-block;
+    font: inherit;
+    line-height: 20px;
+    padding: 4px 25px 4px 10px;
+    margin-bottom: 20px;
+    width: 265px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+  .admin-form select {
+    background-image: url("../images/select-arrow-down.png");
+    background-position: -webkit-calc(100% - 10px) -webkit-calc(0.8em - 1px), -webkit-calc(100% - 12px) -webkit-calc(0.8em + 0px), 100% 0 !important;
+    background-position: calc(100% - 10px) calc(0.8em - 1px), calc(100% - 12px) calc(0.8em + 0px), 100% 0 !important;
+    background-size: 11px 6px, 8px 8px, 2.5em 2.7em !important;
+    background-repeat: no-repeat !important; }
+  .admin-form .tr .td {
+    font-family: "Roboto-Regular", sans-serif;
+    color: #727272; }
+  .admin-form .tr .td:first-child {
+    width: 30%; }
+  .admin-form .form__body {
+    background: #FBFBFB;
+    background: -webkit-linear-gradient(top, #FBFBFB 0%, #B2B4B7 60%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), color-stop(60%, #B2B4B7));
+    background: linear-gradient(to bottom, #FBFBFB 0%, #B2B4B7 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+    padding: 30px 30px 30px 20px; }
+  .admin-form .form__submit {
+    overflow: hidden;
+    background: #0277B4;
+    text-align: center;
+    padding: 10px 0; }
+    .admin-form .form__submit button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      line-height: 35px; }
+    .admin-form .form__submit i {
+      margin-right: 17px;
+      width: 27px;
+      height: 35px;
+      background-size: 100%;
+      float: left; }
+  .admin-form .admin-form__register {
+    margin-bottom: 25px; }
+    .admin-form .admin-form__register .tr .td:first-child {
+      width: 155px; }
+    .admin-form .admin-form__register input {
+      width: 265px; }
+    .admin-form .admin-form__register label span {
+      color: #0277B4;
+      line-height: 30px; }
+    .admin-form .admin-form__register input.error {
+      background: #FFCCCC; }
+    .admin-form .admin-form__register #PLZ {
+      float: left;
+      margin-right: 25px;
+      width: 98px; }
+    .admin-form .admin-form__register #Ort {
+      width: 99px;
+      margin-left: 10px; }
+      .admin-form .admin-form__register #Ort + label {
+        float: left; }
+    .admin-form .admin-form__register .toggle {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: opacity .3s, max-height .3s;
+      transition: opacity .3s, max-height .3s;
+      display: none; }
+    .admin-form .admin-form__register .expanded {
+      max-height: 100px;
+      opacity: 1;
+      display: block; }
+    .admin-form .admin-form__register input[type='checkbox'], .admin-form .admin-form__register input[type='radio'] {
+      display: none;
+      cursor: pointer; }
+    .admin-form .admin-form__register input[type='checkbox']:focus,
+    .admin-form .admin-form__register input[type='radio']:focus,
+    .admin-form .admin-form__register input[type='checkbox']:active,
+    .admin-form .admin-form__register input[type='radio']:active {
+      outline: none; }
+    .admin-form .admin-form__register .checkbox {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      padding-left: 35px;
+      padding-bottom: 8px;
+      margin-right: 13px; }
+    .admin-form .admin-form__register .checkbox:before,
+    .admin-form .admin-form__register .checkbox:after {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      left: 0;
+      top: -4px;
+      text-align: center;
+      position: absolute; }
+    .admin-form .admin-form__register .checkbox:before {
+      background-color: #fff;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      border: 1px solid #E4E4E4;
+      border-radius: 5px; }
+    .admin-form .admin-form__register input[type='checkbox']:checked + label:before,
+    .admin-form .admin-form__register input[type='radio']:checked + label:before {
+      border: 1px solid #E4E4E4; }
+    .admin-form .admin-form__register input[type='checkbox']:checked + label:after,
+    .admin-form .admin-form__register input[type='radio']:checked + label:after {
+      position: absolute;
+      top: -4px;
+      right: 0;
+      width: 28px;
+      height: 28px;
+      background: url("../images/icon-ok-blue.png") center no-repeat; }
+    .admin-form .admin-form__register .checkbox:hover:after {
+      color: #c7c7c7; }
+    .admin-form .admin-form__register .checkbox:after,
+    .admin-form .admin-form__register .checkbox:hover:after {
+      color: #10acdc; }
+    .admin-form .admin-form__register #subscribe + label,
+    .admin-form .admin-form__register #AGB + label {
+      margin-right: 0;
+      padding-left: 40px; }
+    .admin-form .admin-form__register #subscribe + label,
+    .admin-form .admin-form__register #AGB + label, .admin-form .admin-form__register #AGB + label span {
+      line-height: 17px; }
 
 .trust .tr {
   display: block;
@@ -3577,7 +3594,7 @@ body {
     .admin-form__address form + a i {
       float: left;
       margin-right: 10px; }
-  .admin-form__address input, .admin-form__address select, .admin-form__address textarea {
+  .admin-form__address input, .admin-form__address textarea {
     border-radius: 5px;
     border: 1px solid #E4E4E4;
     margin-bottom: 20px;
